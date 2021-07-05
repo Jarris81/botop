@@ -75,3 +75,7 @@ void FrankaGripper::step() {
 
   if(!ret) LOG(-1) <<"gripper command " <<msg.cmd <<" failed (" <<msg.width <<' ' <<msg.speed <<')' <<endl;
 }
+
+void FrankaGripper::waitForIdle() {
+  return Thread::waitForIdle();
+}

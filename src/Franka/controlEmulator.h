@@ -12,6 +12,8 @@ struct GripperAbstraction {
                      double width=.05, //which is 5cm
                      double speed=.1) = 0;
   virtual double pos() = 0;
+
+  virtual void waitForIdle() = 0;
 };
 }
 
@@ -49,4 +51,8 @@ struct GripperEmulator : rai::GripperAbstraction, Thread{
              double speed=.1) { q=width; }
 
   double pos(){ return q; }
+
+  void waitForIdle(){}
+
+
 };

@@ -36,6 +36,7 @@ struct BotOp{
   void gripperOpen(double width=.075, double speed=.2){ gripper->open(width, speed); }
   void gripperClose(double force=10, double width=.05, double speed=.1){ gripper->close(force, width, speed); }
   double gripperPos(){ return gripper->pos(); }
+  void waitGripperIdle() {return  gripper->waitForIdle();}
 
   //-- sync the user's C with the robot, update the display, return false if motion spline is done
   bool step(rai::Configuration& C, double waitTime=.1);

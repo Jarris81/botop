@@ -40,6 +40,8 @@ struct FrankaGripper : rai::GripperAbstraction, Thread{
 
   void step();
 
+  void waitForIdle();
+
 private:
   shared_ptr<franka::Gripper> gripper;
 };

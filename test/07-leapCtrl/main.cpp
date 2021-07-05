@@ -27,10 +27,12 @@ void testLeapCtrl() {
       ->setShape(rai::ST_marker, {.1})
       .setPosition(center + arr{+.3,.0,+.2});
   C.watch(true);
+
+  cout<<target.parent<<endl;
   arr q0 = C.getJointState();
 
   //-- start a robot thread
-  BotOp bot(C, rai::checkParameter<bool>("real"));
+  BotOp bot(C, rai::checkParameter<bool>("sim"));
   bot.home(C);
 
 
