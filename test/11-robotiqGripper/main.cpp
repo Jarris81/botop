@@ -5,7 +5,7 @@
 int main(int argc, char** argv) {
 
   {
-    std::shared_ptr<RobotiqGripper> G_ri = make_shared<RobotiqGripper>(0);
+      std::shared_ptr<RobotiqGripper> G_ri = make_shared<RobotiqGripper>(0);
 //    auto G_le = make_shared<FrankaGripper>(1);
     cout <<"gripper pos:" <<G_ri->pos() <<" isGrasped:" <<G_ri->isGrasped() <<endl;
 
@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
     G_ri->waitForIdle();
     cout <<"done" <<endl;
     rai::wait();
-    cout <<"=========== Normal open..." <<flush;
+    cout <<"=========== Normal open..." <<std::endl;
     G_ri->open();
     G_ri->waitForIdle();
     rai::wait();
@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
     G_ri->waitForIdle();
     cout <<"done" <<endl;
     rai::wait();
-    cout <<"=========== Normal open..." <<flush;
+    cout <<"=========== Normal open..." <<std::endl;
     G_ri->open();
     G_ri->waitForIdle();
     rai::wait();
@@ -37,7 +37,7 @@ int main(int argc, char** argv) {
     G_ri->waitForIdle();
     cout <<"done" <<endl;
     rai::wait();
-    cout <<"=========== Normal open..." <<flush;
+    cout <<"=========== Normal open..." <<std::endl;
     G_ri->open();
     G_ri->waitForIdle();
     rai::wait();
