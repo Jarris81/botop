@@ -16,7 +16,7 @@ cd build
 
 cmake -DPYTHON_EXECUTABLE=$python_int_path -DPYTHON_LIBRARY=$python_lib_path -Dpybind11_DIR=`python3 -m pybind11 --cmakedir` ..
 
-make -j4
+make -j2
 
 conda develop "$(pwd)/"
 

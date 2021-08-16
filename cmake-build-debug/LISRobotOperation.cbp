@@ -721,12 +721,6 @@
 		<Unit filename="/home/jason/git/botop/rai/rai/Kin/cameraview.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jason/git/botop/rai/rai/Kin/dof_particles.cpp">
-			<Option target="rai"/>
-		</Unit>
-		<Unit filename="/home/jason/git/botop/rai/rai/Kin/dof_particles.h">
-			<Option target="rai"/>
-		</Unit>
 		<Unit filename="/home/jason/git/botop/rai/rai/Kin/feature.cpp">
 			<Option target="rai"/>
 		</Unit>

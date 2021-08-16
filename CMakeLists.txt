@@ -13,9 +13,10 @@ option(USE_OPENCV "Link to opencv" OFF)
 option(USE_REALSENSE "Link to realsense2 driver library" OFF)
 
 #find_package( Bullet REQUIRED )
-find_package(pybind11)
+#find_package(pybind11)
 find_package(Boost REQUIRED system filesystem)
 #find_package(Boost COMPONENTS system ...)
+
 option(USE_PYBIND "build python bindings" ON)
 option(USE_OPENCV "link to opencv" OFF)
 option(USE_REALSENSE "link to realsense2 driver library" OFF)
@@ -34,9 +35,10 @@ add_definitions(
   -DRAI_SWIFT -DRAI_GJK -DRAI_FCL -DRAI_CCD
   -DRAI_FRANKA
   -DRAI_PYBIND
-#  -BOOST_ERROR_CODE_HEADER_ONLY
+  -BOOST_ERROR_CODE_HEADER_ONLY
   #-DRAI_PHYSX -D_DEBUG -DPX_DISABLE_FLUIDS -DCORELIB -DPX32 -DLINUX
   #-DRAI_BULLET
+
   )
 
 ################################################################################
@@ -74,7 +76,6 @@ file(GLOB SRC_ry rai/rai/ry/*.cpp)
 file(GLOB SRC_Franka src/Franka/*.cpp)
 file(GLOB SRC_RealSense src/RealSense/*.cpp)
 file(GLOB SRC_BotOp src/BotOp/*.cpp)
-
 file(GLOB SRC_Robotiq src/Robotiq/*.cpp)
 
 add_library(rai SHARED

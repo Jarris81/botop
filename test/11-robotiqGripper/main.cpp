@@ -17,6 +17,7 @@ int main(int argc, char** argv) {
     G_ri->waitForIdle();
     cout <<"done" <<endl;
     rai::wait();
+    cout <<"=========== Normal open..." <<flush;
     G_ri->open();
     G_ri->waitForIdle();
     rai::wait();
@@ -26,6 +27,7 @@ int main(int argc, char** argv) {
     G_ri->waitForIdle();
     cout <<"done" <<endl;
     rai::wait();
+    cout <<"=========== Normal open..." <<flush;
     G_ri->open();
     G_ri->waitForIdle();
     rai::wait();
@@ -35,6 +37,7 @@ int main(int argc, char** argv) {
     G_ri->waitForIdle();
     cout <<"done" <<endl;
     rai::wait();
+    cout <<"=========== Normal open..." <<flush;
     G_ri->open();
     G_ri->waitForIdle();
     rai::wait();
