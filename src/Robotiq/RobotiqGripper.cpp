@@ -1,7 +1,8 @@
 #include "RobotiqGripper.h"
-#include <boost/asio.hpp>
 
 //const char *gripperIpAddresses[2] = {"172.16.0.2", "172.17.0.2"};
+
+
 
 RobotiqGripper::RobotiqGripper(uint whichRobot)
 : Thread(STRING("RobotiqGripper_"<<whichRobot))
@@ -12,17 +13,20 @@ RobotiqGripper::RobotiqGripper(uint whichRobot)
 
   threadOpen();
 
-  io_service io;
-  serialPort = std::make_shared<serial_port>(io);
-
+//  io_service io;
+//  serialPort = std::make_shared<serial_port>(io);
+//
 //  serialPort->open("Somename");
-  serialPort->set_option(serial_port_base::baud_rate(115200));
-  serialPort->set_option(serial_port_base::stop_bits(serial_port_base::stop_bits::one));
-  serialPort->set_option(serial_port_base::character_size(8));
-  serialPort->set_option(serial_port_base::parity(serial_port_base::parity::none));
-
-  // send initialization command
-  -
+//  serialPort->set_option(serial_port_base::baud_rate(115200));
+//  serialPort->set_option(serial_port_base::stop_bits(serial_port_base::stop_bits::one));
+////  serialPort->set_option(serial_port_base::ce(8));
+//  serialPort->set_option(serial_port_base::parity(serial_port_base::parity::none));
+//
+//  // send initialization command
+//  serialPort->write_some(buffer(
+//          "\x09\x10\x03\xE8\x00\x03\x06\x00\x00\x00\x00\x00\x00\x73\x30",
+//                                15));
+  std::cout<<"hex value for init is: "<< "\x09\x10\x03\xE8\x00\x03\x06\x00\x00\x00\x00\x00\x00\x73\x30"<< std::endl;
 
 
 }
@@ -74,23 +78,32 @@ void RobotiqGripper::step() {
 
   if(msg.cmd==msg._done) return;
 
-  if(msg.width>maxWidth){
-    LOG(-1) <<"width " <<msg.width <<" is too large (max:" <<maxWidth <<')';
-    msg.width = maxWidth - .001;
+  if(msg.width>MAX_WIDTH){
+    LOG(-1) <<"width " <<msg.width <<" is too large (max:" <<MAX_WIDTH <<')';
   }
 
   bool ret=true;
+  int val_width, val_force;
+  std::stringstream stream;
+
 
   switch(msg.cmd){
     case msg._close:
-      //ret = robotiqGripper->grasp(msg.width, msg.speed, msg.force, 0.08, 0.08);
-      break;
     case msg._open:
+      //convert values to ints between 0 and 256 (one byte)
+      val_width = int(256* msg.width/MAX_WIDTH);
+
+      std::cout<<"Int value for width is: "<<val_width<<std::endl;
+
+      //convert to hex string
+      stream << std::hex << val_width;
+      std::cout<<"hex value for width is: "<< stream.str()<< std::endl;
+
+
       //ret = frankaGripper->move(msg.width, msg.speed);
       break;
     case msg._home:
       //ret = frankaGripper->homing();
-      break;
     case msg._done:
       break;
   }

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.4)
 
-project(LISRobotLab)
+project(LISRobotOperation)
 
 set(CMAKE_CXX_STANDARD 14 CACHE STRING "C++ version selection")
 
@@ -13,9 +13,13 @@ option(USE_OPENCV "Link to opencv" OFF)
 option(USE_REALSENSE "Link to realsense2 driver library" OFF)
 
 #find_package( Bullet REQUIRED )
-find_package(pybind11)
+#find_package(pybind11)
 find_package(Boost REQUIRED system filesystem)
 #find_package(Boost COMPONENTS system ...)
+
+option(USE_PYBIND "build python bindings" ON)
+option(USE_OPENCV "link to opencv" OFF)
+option(USE_REALSENSE "link to realsense2 driver library" OFF)
 
 add_compile_options(
   -O3 -g -Wall -fPIC -std=c++14 -Wno-terminate -Wno-pragmas -lboost_system
@@ -31,7 +35,7 @@ add_definitions(
   -DRAI_SWIFT -DRAI_GJK -DRAI_FCL -DRAI_CCD
   -DRAI_FRANKA
   -DRAI_PYBIND
-#  -BOOST_ERROR_CODE_HEADER_ONLY
+  -BOOST_ERROR_CODE_HEADER_ONLY
   #-DRAI_PHYSX -D_DEBUG -DPX_DISABLE_FLUIDS -DCORELIB -DPX32 -DLINUX
   #-DRAI_BULLET
   )
@@ -43,15 +47,10 @@ include_directories(
   rai/rai
   /usr/include/eigen3
   $ENV{HOME}/opt/include
-  #${BULLET_INCLUDE_DIRS}
-  #$ENV{HOME}/opt/physx3.4/include $ENV{HOME}/opt/physx3.4/include/physx
-  #$ENV{HOME}/opt/include/bullet/
   )
 
 link_directories(
   $ENV{HOME}/opt/lib
-  #$ENV{HOME}/opt/physx3.4/lib
-  #/opt/ros/kinetic/lib
   )
 
 file(GLOB SRC_Core rai/rai/Core/*.cpp)
@@ -75,8 +74,7 @@ file(GLOB SRC_ry rai/rai/ry/*.cpp)
 
 file(GLOB SRC_Franka src/Franka/*.cpp)
 file(GLOB SRC_RealSense src/RealSense/*.cpp)
-file(GLOB SRC_BotOp src/BotOp/bot.cpp)
-
+file(GLOB SRC_BotOp src/BotOp/*.cpp)
 file(GLOB SRC_Robotiq src/Robotiq/*.cpp)
 
 add_library(rai SHARED
@@ -97,7 +95,6 @@ add_library(rai SHARED
   ${SRC_Perception}
   ${SRC_Control}
   #${SRC_Operate}
-  #  ${SRC_ry}
   ${SRC_Franka}
   ${SRC_Robotiq}
   ${SRC_BotOp}
@@ -113,6 +110,15 @@ target_link_libraries(rai
   )
 
 ################################################################################
+
+if(USE_PYBIND)
+  execute_process(
+    COMMAND bash "-c" "python3 -m pybind11 --cmakedir" 
+    OUTPUT_STRIP_TRAILING_WHITESPACE OUTPUT_VARIABLE pybind11_DIR
+  )
+  find_package(pybind11)
+  add_definitions(-DRAI_PYBIND)
+endif()
 
 if(USE_OPENCV)
   find_package(OpenCV REQUIRED)
@@ -135,7 +141,7 @@ target_link_libraries(libry PRIVATE
   )
 
 pybind11_add_module(libpybot SHARED
-  src/BotOp/pyBot.cpp
+  src/BotOp/pyBot.cxx
   )
 target_link_libraries(libpybot PRIVATE
   rai
