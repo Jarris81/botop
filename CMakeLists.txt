@@ -38,6 +38,7 @@ add_definitions(
   -BOOST_ERROR_CODE_HEADER_ONLY
   #-DRAI_PHYSX -D_DEBUG -DPX_DISABLE_FLUIDS -DCORELIB -DPX32 -DLINUX
   #-DRAI_BULLET
+
   )
 
 ################################################################################
