@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="LISRobotLab" targetName="rai" />
-      <config projectName="LISRobotLab" targetName="bot" />
-      <config projectName="LISRobotLab" targetName="kinEdit" />
       <config projectName="LISRobotLab" targetName="libry" />
       <config projectName="LISRobotLab" targetName="libpybot" />
     </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9b64807-4d6a-4225-b078-4d43e717c293" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LISRobotLab.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LISRobotLab.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rai" beforeDir="false" afterPath="$PROJECT_DIR$/rai" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rai/rai/Control/CtrlSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/rai/rai/Control/CtrlSet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rai/rai/Control/CtrlSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/rai/rai/Control/CtrlSet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rai/rai/ry/ry-Control.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/rai/rai/ry/ry-Control.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BotOp/bot.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/BotOp/bot.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BotOp/pyBot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/BotOp/pyBot.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Franka/controlEmulator.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Franka/controlEmulator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Franka/franka.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Franka/franka.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Franka/gripper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Franka/gripper.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Franka/gripper.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Franka/gripper.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/07-leapCtrl/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/07-leapCtrl/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/09-pybind/main.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/09-pybind/main.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RealSense/RealSenseThread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/RealSense/RealSenseThread.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/01-openClose/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/01-openClose/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/06-fastPath/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/06-fastPath/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/06-fastPath/plt" beforeDir="false" afterPath="$PROJECT_DIR$/test/06-fastPath/plt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/08-pnp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/08-pnp/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/08-pnp/rai.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/test/08-pnp/rai.cfg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +63,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/rai/rai/Control" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/11-robotiqGripper" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -65,20 +71,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/11-robotiqGripper" />
+      <recent name="$PROJECT_DIR$/src/Robotiq" />
       <recent name="$PROJECT_DIR$/rai/rai/Control" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.bot">
-    <configuration name="bot" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LISRobotLab" TARGET_NAME="bot" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LISRobotLab" RUN_TARGET_NAME="bot">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="kinEdit" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LISRobotLab" TARGET_NAME="kinEdit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LISRobotLab" RUN_TARGET_NAME="kinEdit">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="CMake Application.libpybot">
     <configuration name="libpybot" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LISRobotLab" TARGET_NAME="libpybot" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -94,9 +92,12 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="CMake Application.bot" />
-      <item itemvalue="CMake Application.kinEdit" />
       <item itemvalue="CMake Application.libpybot" />
       <item itemvalue="CMake Application.libry" />
       <item itemvalue="CMake Application.rai" />
@@ -120,7 +121,19 @@
       <workItem from="1625055556288" duration="1756000" />
       <workItem from="1625067441093" duration="987000" />
       <workItem from="1625248777303" duration="1041000" />
-      <workItem from="1625510991876" duration="2728000" />
+      <workItem from="1625510991876" duration="3127000" />
+      <workItem from="1625582270119" duration="1516000" />
+      <workItem from="1627045759138" duration="1857000" />
+      <workItem from="1627936774742" duration="6000" />
+      <workItem from="1627937258060" duration="1056000" />
+      <workItem from="1628781494294" duration="5000" />
+      <workItem from="1629027647060" duration="5406000" />
+      <workItem from="1629040114234" duration="4618000" />
+      <workItem from="1629045071524" duration="337000" />
+      <workItem from="1629045807664" duration="1995000" />
+      <workItem from="1629058365931" duration="6000" />
+      <workItem from="1629064040851" duration="3000" />
+      <workItem from="1629064604941" duration="2548000" />
     </task>
     <servers />
   </component>

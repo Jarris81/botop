@@ -4,15 +4,24 @@ project(LISRobotLab)
 
 set(CMAKE_CXX_STANDARD 14 CACHE STRING "C++ version selection")
 
-find_package( OpenCV REQUIRED )
+execute_process(
+    COMMAND bash "-c" "python3 -m pybind11 --cmakedir" 
+    OUTPUT_STRIP_TRAILING_WHITESPACE OUTPUT_VARIABLE pybind11_DIR
+)
+
+option(USE_OPENCV "Link to opencv" OFF)
+option(USE_REALSENSE "Link to realsense2 driver library" OFF)
+
 #find_package( Bullet REQUIRED )
 find_package(pybind11)
-#find_package(Python COMPONENTS Interpreter Development REQUIRED)
-#find_package(pybind11 CONFIG REQUIRED)
+find_package(Boost REQUIRED system filesystem)
+#find_package(Boost COMPONENTS system ...)
 
 add_compile_options(
-  -O3 -g -Wall -fPIC -std=c++14 -Wno-terminate -Wno-pragmas
+  -O3 -g -Wall -fPIC -std=c++14 -Wno-terminate -Wno-pragmas -lboost_system
   )
+
+################################################################################
 
 add_definitions(
   -DRAI_ROOT_PATH=\"${CMAKE_SOURCE_DIR}/rai\"
@@ -20,13 +29,14 @@ add_definitions(
   -DRAI_GL
   -DRAI_GLFW -DRAI_ANN -DRAI_QHULL -DRAI_ASSIMP -DNO_CYCLE_DETECTION -DRAI_PNG -DRAI_PLY
   -DRAI_SWIFT -DRAI_GJK -DRAI_FCL -DRAI_CCD
-  -DRAI_OPENCV
   -DRAI_FRANKA
-  -DRAI_REALSENSE
   -DRAI_PYBIND
-  #-DRAI_PHYSX -D_DEBUG -DPX_DISABLE_FLUIDS -DCORELIB -DPX32 -DLINUX #physx
-  #-DRAI_BULLET #bullet
+#  -BOOST_ERROR_CODE_HEADER_ONLY
+  #-DRAI_PHYSX -D_DEBUG -DPX_DISABLE_FLUIDS -DCORELIB -DPX32 -DLINUX
+  #-DRAI_BULLET
   )
+
+################################################################################
 
 include_directories(
   src/
@@ -67,6 +77,8 @@ file(GLOB SRC_Franka src/Franka/*.cpp)
 file(GLOB SRC_RealSense src/RealSense/*.cpp)
 file(GLOB SRC_BotOp src/BotOp/bot.cpp)
 
+file(GLOB SRC_Robotiq src/Robotiq/*.cpp)
+
 add_library(rai SHARED
   ${SRC_Core}
   ${SRC_Optim}
@@ -87,43 +99,55 @@ add_library(rai SHARED
   #${SRC_Operate}
   #  ${SRC_ry}
   ${SRC_Franka}
-  ${SRC_RealSense}
+  ${SRC_Robotiq}
   ${SRC_BotOp}
+  ${SRC_RealSense}
   )
 
 target_link_libraries(rai
   jsoncpp lapack blas pthread rt X11
   assimp fcl ann glfw GLEW glut GLU GL png qhull
-  franka
-  realsense2
-  ${OpenCV_LIBS}
+  franka boost_system
   #${BULLET_LIBRARIES}
   #PhysX3Extensions PhysX3_x64 PhysX3Cooking_x64 PhysX3Common_x64 PxFoundation_x64
-  #BulletSoftBody BulletDynamics BulletCollision LinearMath 
   )
+
+################################################################################
+
+if(USE_OPENCV)
+  find_package(OpenCV REQUIRED)
+  add_definitions(-DRAI_OPENCV)
+  target_link_libraries(rai ${OpenCV_LIBS})
+endif()
+
+if(USE_REALSENSE)
+  add_definitions(-DRAI_REALSENSE)
+  target_link_libraries(rai realsense2)
+endif()
+
+################################################################################
 
 pybind11_add_module(libry SHARED
   ${SRC_ry}
   )
-
 target_link_libraries(libry PRIVATE
   rai
   )
 
 pybind11_add_module(libpybot SHARED
-  rai
   src/BotOp/pyBot.cpp
   )
-
 target_link_libraries(libpybot PRIVATE
   rai
   libry
   )
 
-add_executable(kinEdit rai/bin/src_kinEdit/main.cpp)
-target_link_libraries(kinEdit rai)
+################################################################################
 
-add_executable(bot bin/bot/main.cpp)
-target_link_libraries(bot rai)
+#add_executable(kinEdit rai/bin/src_kinEdit/main.cpp)
+#target_link_libraries(kinEdit rai)
+
+#add_executable(bot bin/bot/main.cpp src/Robotiq/RobotiqGripper.h src/Robotiq/RobotiqGripper.cpp)
+#target_link_libraries(bot rai)
 
 

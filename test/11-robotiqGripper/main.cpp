@@ -1,10 +1,11 @@
-#include <Franka/gripper.h>
+//#include <Franka/gripper.h>
+#include <Robotiq/RobotiqGripper.h>
 #include <Franka/controlEmulator.h>
 
 int main(int argc, char** argv) {
 
   {
-    std::shared_ptr<FrankaGripper> G_ri = make_shared<FrankaGripper>(0);
+    std::shared_ptr<RobotiqGripper> G_ri = make_shared<RobotiqGripper>(0);
 //    auto G_le = make_shared<FrankaGripper>(1);
     cout <<"gripper pos:" <<G_ri->pos() <<" isGrasped:" <<G_ri->isGrasped() <<endl;
 

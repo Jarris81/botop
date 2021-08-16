@@ -5,7 +5,7 @@
 		<Option title="LISRobotLab"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\share\;CMake Files\..\..\..\..\usr\share\OpenCV\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\usr\lib\cmake\pybind11\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\.local\;CMake Files\..\..\.local\lib\;CMake Files\..\..\.local\lib\python3.6\;CMake Files\..\..\.local\lib\python3.6\site-packages\;CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\;CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\;CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\;CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
@@ -22,114 +22,6 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="bot">
-				<Option output="/home/jason/git/botop/cmake-build-debug/bot" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
-					<Add option="-DRAI_X11"/>
-					<Add option="-DRAI_LAPACK"/>
-					<Add option="-DRAI_EIGEN"/>
-					<Add option="-DRAI_PTHREAD"/>
-					<Add option="-DRAI_GL"/>
-					<Add option="-DRAI_GLFW"/>
-					<Add option="-DRAI_ANN"/>
-					<Add option="-DRAI_QHULL"/>
-					<Add option="-DRAI_ASSIMP"/>
-					<Add option="-DNO_CYCLE_DETECTION"/>
-					<Add option="-DRAI_PNG"/>
-					<Add option="-DRAI_PLY"/>
-					<Add option="-DRAI_SWIFT"/>
-					<Add option="-DRAI_GJK"/>
-					<Add option="-DRAI_FCL"/>
-					<Add option="-DRAI_CCD"/>
-					<Add option="-DRAI_OPENCV"/>
-					<Add option="-DRAI_FRANKA"/>
-					<Add option="-DRAI_REALSENSE"/>
-					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jason/git/botop/src"/>
-					<Add directory="/home/jason/git/botop/rai/rai"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jason/opt/include"/>
-					<Add directory="/usr/include/opencv"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 bot"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="bot/fast">
-				<Option output="/home/jason/git/botop/cmake-build-debug/bot" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
-					<Add option="-DRAI_X11"/>
-					<Add option="-DRAI_LAPACK"/>
-					<Add option="-DRAI_EIGEN"/>
-					<Add option="-DRAI_PTHREAD"/>
-					<Add option="-DRAI_GL"/>
-					<Add option="-DRAI_GLFW"/>
-					<Add option="-DRAI_ANN"/>
-					<Add option="-DRAI_QHULL"/>
-					<Add option="-DRAI_ASSIMP"/>
-					<Add option="-DNO_CYCLE_DETECTION"/>
-					<Add option="-DRAI_PNG"/>
-					<Add option="-DRAI_PLY"/>
-					<Add option="-DRAI_SWIFT"/>
-					<Add option="-DRAI_GJK"/>
-					<Add option="-DRAI_FCL"/>
-					<Add option="-DRAI_CCD"/>
-					<Add option="-DRAI_OPENCV"/>
-					<Add option="-DRAI_FRANKA"/>
-					<Add option="-DRAI_REALSENSE"/>
-					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jason/git/botop/src"/>
-					<Add directory="/home/jason/git/botop/rai/rai"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jason/opt/include"/>
-					<Add directory="/usr/include/opencv"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 bot/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -159,15 +51,12 @@
 					<Add option="-DRAI_GJK"/>
 					<Add option="-DRAI_FCL"/>
 					<Add option="-DRAI_CCD"/>
-					<Add option="-DRAI_OPENCV"/>
 					<Add option="-DRAI_FRANKA"/>
-					<Add option="-DRAI_REALSENSE"/>
 					<Add option="-DRAI_PYBIND"/>
 					<Add directory="/home/jason/git/botop/src"/>
 					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/jason/opt/include"/>
-					<Add directory="/usr/include/opencv"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -208,15 +97,12 @@
 					<Add option="-DRAI_GJK"/>
 					<Add option="-DRAI_FCL"/>
 					<Add option="-DRAI_CCD"/>
-					<Add option="-DRAI_OPENCV"/>
 					<Add option="-DRAI_FRANKA"/>
-					<Add option="-DRAI_REALSENSE"/>
 					<Add option="-DRAI_PYBIND"/>
 					<Add directory="/home/jason/git/botop/src"/>
 					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/jason/opt/include"/>
-					<Add directory="/usr/include/opencv"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -257,16 +143,14 @@
 					<Add option="-DRAI_GJK"/>
 					<Add option="-DRAI_FCL"/>
 					<Add option="-DRAI_CCD"/>
-					<Add option="-DRAI_OPENCV"/>
 					<Add option="-DRAI_FRANKA"/>
-					<Add option="-DRAI_REALSENSE"/>
 					<Add option="-DRAI_PYBIND"/>
 					<Add directory="/home/jason/git/botop/src"/>
 					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/jason/opt/include"/>
 					<Add directory="/usr/include/python3.6m"/>
-					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/jason/.local/lib/python3.6/site-packages/pybind11/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -307,16 +191,14 @@
 					<Add option="-DRAI_GJK"/>
 					<Add option="-DRAI_FCL"/>
 					<Add option="-DRAI_CCD"/>
-					<Add option="-DRAI_OPENCV"/>
 					<Add option="-DRAI_FRANKA"/>
-					<Add option="-DRAI_REALSENSE"/>
 					<Add option="-DRAI_PYBIND"/>
 					<Add directory="/home/jason/git/botop/src"/>
 					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/jason/opt/include"/>
 					<Add directory="/usr/include/python3.6m"/>
-					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/jason/.local/lib/python3.6/site-packages/pybind11/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -328,6 +210,16 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 libry/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -357,16 +249,14 @@
 					<Add option="-DRAI_GJK"/>
 					<Add option="-DRAI_FCL"/>
 					<Add option="-DRAI_CCD"/>
-					<Add option="-DRAI_OPENCV"/>
 					<Add option="-DRAI_FRANKA"/>
-					<Add option="-DRAI_REALSENSE"/>
 					<Add option="-DRAI_PYBIND"/>
 					<Add directory="/home/jason/git/botop/src"/>
 					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/jason/opt/include"/>
 					<Add directory="/usr/include/python3.6m"/>
-					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/jason/.local/lib/python3.6/site-packages/pybind11/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -407,16 +297,14 @@
 					<Add option="-DRAI_GJK"/>
 					<Add option="-DRAI_FCL"/>
 					<Add option="-DRAI_CCD"/>
-					<Add option="-DRAI_OPENCV"/>
 					<Add option="-DRAI_FRANKA"/>
-					<Add option="-DRAI_REALSENSE"/>
 					<Add option="-DRAI_PYBIND"/>
 					<Add directory="/home/jason/git/botop/src"/>
 					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/jason/opt/include"/>
 					<Add directory="/usr/include/python3.6m"/>
-					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/jason/.local/lib/python3.6/site-packages/pybind11/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -433,114 +321,7 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="kinEdit">
-				<Option output="/home/jason/git/botop/cmake-build-debug/kinEdit" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
-					<Add option="-DRAI_X11"/>
-					<Add option="-DRAI_LAPACK"/>
-					<Add option="-DRAI_EIGEN"/>
-					<Add option="-DRAI_PTHREAD"/>
-					<Add option="-DRAI_GL"/>
-					<Add option="-DRAI_GLFW"/>
-					<Add option="-DRAI_ANN"/>
-					<Add option="-DRAI_QHULL"/>
-					<Add option="-DRAI_ASSIMP"/>
-					<Add option="-DNO_CYCLE_DETECTION"/>
-					<Add option="-DRAI_PNG"/>
-					<Add option="-DRAI_PLY"/>
-					<Add option="-DRAI_SWIFT"/>
-					<Add option="-DRAI_GJK"/>
-					<Add option="-DRAI_FCL"/>
-					<Add option="-DRAI_CCD"/>
-					<Add option="-DRAI_OPENCV"/>
-					<Add option="-DRAI_FRANKA"/>
-					<Add option="-DRAI_REALSENSE"/>
-					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jason/git/botop/src"/>
-					<Add directory="/home/jason/git/botop/rai/rai"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jason/opt/include"/>
-					<Add directory="/usr/include/opencv"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 kinEdit"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="kinEdit/fast">
-				<Option output="/home/jason/git/botop/cmake-build-debug/kinEdit" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
-					<Add option="-DRAI_X11"/>
-					<Add option="-DRAI_LAPACK"/>
-					<Add option="-DRAI_EIGEN"/>
-					<Add option="-DRAI_PTHREAD"/>
-					<Add option="-DRAI_GL"/>
-					<Add option="-DRAI_GLFW"/>
-					<Add option="-DRAI_ANN"/>
-					<Add option="-DRAI_QHULL"/>
-					<Add option="-DRAI_ASSIMP"/>
-					<Add option="-DNO_CYCLE_DETECTION"/>
-					<Add option="-DRAI_PNG"/>
-					<Add option="-DRAI_PLY"/>
-					<Add option="-DRAI_SWIFT"/>
-					<Add option="-DRAI_GJK"/>
-					<Add option="-DRAI_FCL"/>
-					<Add option="-DRAI_CCD"/>
-					<Add option="-DRAI_OPENCV"/>
-					<Add option="-DRAI_FRANKA"/>
-					<Add option="-DRAI_REALSENSE"/>
-					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jason/git/botop/src"/>
-					<Add directory="/home/jason/git/botop/rai/rai"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jason/opt/include"/>
-					<Add directory="/usr/include/opencv"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 kinEdit/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 		</Build>
-		<Unit filename="/home/jason/git/botop/bin/bot/main.cpp">
-			<Option target="bot"/>
-		</Unit>
-		<Unit filename="/home/jason/git/botop/rai">
-			<Option target="libpybot"/>
-		</Unit>
-		<Unit filename="/home/jason/git/botop/rai/bin/src_kinEdit/main.cpp">
-			<Option target="kinEdit"/>
-		</Unit>
 		<Unit filename="/home/jason/git/botop/rai/rai/Algo/MLcourse.cpp">
 			<Option target="rai"/>
 		</Unit>
@@ -647,6 +428,12 @@
 			<Option target="rai"/>
 		</Unit>
 		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlSolvers.h">
+			<Option target="rai"/>
+		</Unit>
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlSymCommand.cpp">
+			<Option target="rai"/>
+		</Unit>
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlSymCommand.h">
 			<Option target="rai"/>
 		</Unit>
 		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlTargets.cpp">
@@ -1438,35 +1225,32 @@
 		<Unit filename="/home/jason/git/botop/src/RealSense/RealSenseThread.h">
 			<Option target="rai"/>
 		</Unit>
+		<Unit filename="/home/jason/git/botop/src/Robotiq/RobotiqGripper.cpp">
+			<Option target="rai"/>
+		</Unit>
+		<Unit filename="/home/jason/git/botop/src/Robotiq/RobotiqGripper.h">
+			<Option target="rai"/>
+		</Unit>
 		<Unit filename="/home/jason/git/botop/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/jason/git/botop/../../../../usr/share/OpenCV/OpenCVConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\share\OpenCV\"/>
+		<Unit filename="/home/jason/git/botop/../../.local/lib/python3.6/site-packages/pybind11/share/cmake/pybind11/FindPythonLibsNew.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\"/>
 		</Unit>
-		<Unit filename="/home/jason/git/botop/../../../../usr/share/OpenCV/OpenCVConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\share\OpenCV\"/>
+		<Unit filename="/home/jason/git/botop/../../.local/lib/python3.6/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\"/>
 		</Unit>
-		<Unit filename="/home/jason/git/botop/../../../../usr/share/OpenCV/OpenCVModules-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\share\OpenCV\"/>
+		<Unit filename="/home/jason/git/botop/../../.local/lib/python3.6/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\"/>
 		</Unit>
-		<Unit filename="/home/jason/git/botop/../../../../usr/share/OpenCV/OpenCVModules.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\share\OpenCV\"/>
+		<Unit filename="/home/jason/git/botop/../../.local/lib/python3.6/site-packages/pybind11/share/cmake/pybind11/pybind11ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\"/>
 		</Unit>
-		<Unit filename="/home/jason/git/botop/../../../../usr/lib/cmake/pybind11/FindPythonLibsNew.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\pybind11\"/>
+		<Unit filename="/home/jason/git/botop/../../.local/lib/python3.6/site-packages/pybind11/share/cmake/pybind11/pybind11Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\"/>
 		</Unit>
-		<Unit filename="/home/jason/git/botop/../../../../usr/lib/cmake/pybind11/pybind11Config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\pybind11\"/>
-		</Unit>
-		<Unit filename="/home/jason/git/botop/../../../../usr/lib/cmake/pybind11/pybind11ConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\pybind11\"/>
-		</Unit>
-		<Unit filename="/home/jason/git/botop/../../../../usr/lib/cmake/pybind11/pybind11Targets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\pybind11\"/>
-		</Unit>
-		<Unit filename="/home/jason/git/botop/../../../../usr/lib/cmake/pybind11/pybind11Tools.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\pybind11\"/>
+		<Unit filename="/home/jason/git/botop/../../.local/lib/python3.6/site-packages/pybind11/share/cmake/pybind11/pybind11Tools.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
