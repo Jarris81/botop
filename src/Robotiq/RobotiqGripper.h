@@ -3,8 +3,8 @@
 //#include <Core/util.h>
 #include <Core/thread.h>
 #include <Franka/controlEmulator.h>
-//#include <boost/asio/serial_port.hpp>
-//#include <boost/asio.hpp>
+#include <boost/asio/serial_port.hpp>
+#include <boost/asio.hpp>
 
 // all values taken from docs of gripper
 const double MAX_WIDTH = 0.85; // in mm
@@ -15,7 +15,7 @@ const double MAX_FORCE = 235; // in Newton
 const double MIN_SPEED = 0.02;
 const double MAX_SPEED = 0.15; // in  mm/s
 
-//using namespace boost::asio;
+using namespace boost::asio;
 
 namespace robotiq{
     class Gripper;
@@ -57,6 +57,6 @@ struct RobotiqGripper : rai::GripperAbstraction, Thread{
     void waitForIdle();
 
 private:
-    //std::shared_ptr<serial_port> serialPort;
+    std::shared_ptr<serial_port> serialPort;
 
 };

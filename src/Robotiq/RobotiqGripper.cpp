@@ -11,23 +11,27 @@ RobotiqGripper::RobotiqGripper(uint whichRobot)
   CHECK_LE(whichRobot, 1, "");
 //  robotiqGripper = make_shared<robotiq::Gripper>(gripperIpAddresses[whichRobot]);
 
+    auto cmdSet = cmd.set();
+    cmdSet->cmd = GripperCmdMsg::Command::_done;
+
   threadOpen();
 
-//  io_service io;
-//  serialPort = std::make_shared<serial_port>(io);
-//
-//  serialPort->open("Somename");
 
-//  serialPort->set_option(serial_port_base::baud_rate(115200));
-//  serialPort->set_option(serial_port_base::stop_bits(serial_port_base::stop_bits::one));
-////  serialPort->set_option(serial_port_base::ce(8));
-//  serialPort->set_option(serial_port_base::parity(serial_port_base::parity::none));
-//
-//  // send initialization command
-//  serialPort->write_some(buffer(
-//          "\x09\x10\x03\xE8\x00\x03\x06\x00\x00\x00\x00\x00\x00\x73\x30",
-//                                15));
-  //std::cout<<"hex value for init is: "<< "\x09\x10\x03\xE8\x00\x03\x06\x00\x00\x00\x00\x00\x00\x73\x30"<< std::endl;
+  io_service io;
+  serialPort = std::make_shared<serial_port>(io);
+
+  serialPort->open("/dev/ttyUSB0");
+
+  serialPort->set_option(serial_port_base::baud_rate(115200));
+  serialPort->set_option(serial_port_base::stop_bits(serial_port_base::stop_bits::one));
+  //serialPort->set_option(serial_port_base::ce(8));
+  serialPort->set_option(serial_port_base::parity(serial_port_base::parity::none));
+
+  // send initialization command
+  serialPort->write_some(buffer(
+          "\x09\x10\x03\xE8\x00\x03\x06\x00\x00\x00\x00\x00\x00\x73\x30",
+                                15));
+  std::cout<<"hex value for init is: "<< "\x09\x10\x03\xE8\x00\x03\x06\x00\x00\x00\x00\x00\x00\x73\x30"<< std::endl;
 
 
 }
@@ -66,6 +70,7 @@ void RobotiqGripper::close(double force, double width, double speed){
 double RobotiqGripper::pos(){
   //TODO
   std::cout<<"Hello"<<endl;
+  return 0;
 }
 
 bool RobotiqGripper::isGrasped(){
@@ -90,6 +95,10 @@ void RobotiqGripper::step() {
 
   switch(msg.cmd){
     case msg._close:
+        serialPort->write_some(buffer(
+                "\x09\x10\x03\xE8\x00\x03\x06\x09\x00\x00\xFF\xFF\xFF\x42\x29",
+                15));
+          break;
     case msg._open:
       //convert values to ints between 0 and 256 (one byte)
       val_width = int(256* msg.width/MAX_WIDTH);
@@ -100,7 +109,9 @@ void RobotiqGripper::step() {
       stream << std::hex << val_width;
       std::cout<<"hex value for width is: "<< stream.str()<< std::endl;
 
-
+      serialPort->write_some(buffer(
+              "\x09\x10\x03\xE8\x00\x03\x06\x09\x00\x00\x00\xFF\xFF\x72\x19",
+              15));
       //ret = frankaGripper->move(msg.width, msg.speed);
       break;
     case msg._home:
@@ -108,11 +119,12 @@ void RobotiqGripper::step() {
     case msg._done:
       break;
   }
+  msg.cmd = msg._done;
+  return;
 
   //return value means something else
   //if(!ret) LOG(-1) <<"gripper command " <<msg.cmd <<" failed (" <<msg.width <<' ' <<msg.speed <<')' <<endl;
   //LOG(0) <<"gripper command " <<msg.cmd <<" SEND (" <<msg.width <<' ' <<msg.speed <<' ' <<msg.force  <<')' <<endl;
-
 }
 
 void RobotiqGripper::waitForIdle() {

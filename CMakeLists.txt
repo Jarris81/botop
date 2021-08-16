@@ -13,7 +13,7 @@ option(USE_OPENCV "Link to opencv" OFF)
 option(USE_REALSENSE "Link to realsense2 driver library" OFF)
 
 #find_package( Bullet REQUIRED )
-find_package(pybind11)
+#find_package(pybind11)
 find_package(Boost REQUIRED system filesystem)
 #find_package(Boost COMPONENTS system ...)
 
@@ -22,7 +22,7 @@ option(USE_OPENCV "link to opencv" OFF)
 option(USE_REALSENSE "link to realsense2 driver library" OFF)
 
 add_compile_options(
-  -O3 -g -Wall -fPIC -std=c++14 -Wno-terminate -Wno-pragmas# -lboost_system
+  -O3 -g -Wall -fPIC -std=c++14 -Wno-terminate -Wno-pragmas -lboost_system
   )
 
 ################################################################################
@@ -105,8 +105,7 @@ add_library(rai SHARED
 target_link_libraries(rai
   jsoncpp lapack blas pthread rt X11
   assimp fcl ann glfw GLEW glut GLU GL png qhull
-  franka
-        #boost_system
+  franka boost_system
   #${BULLET_LIBRARIES}
   #PhysX3Extensions PhysX3_x64 PhysX3Cooking_x64 PhysX3Common_x64 PxFoundation_x64
   )
