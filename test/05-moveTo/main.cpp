@@ -16,8 +16,8 @@ void testMoveTo() {
 
   //-- start a robot thread
   C.ensure_indexedJoints();
-  ControlEmulator robot(C, {});
-//  FrankaThreadNew robot(0, franka_getJointIndices(C,'R'));
+  //ControlEmulator robot(C, {});
+  FrankaThreadNew robot(0, franka_getJointIndices(C,'R'));
   robot.writeData = true;
 
   //-- create 2 simple reference configurations
