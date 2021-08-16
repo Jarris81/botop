@@ -1859,6 +1859,30 @@ rai/rai/Kin/cameraview.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rai.dir/build.make CMakeFiles/rai.dir/rai/rai/Kin/cameraview.cpp.s
 .PHONY : rai/rai/Kin/cameraview.cpp.s
 
+rai/rai/Kin/dof_particles.o: rai/rai/Kin/dof_particles.cpp.o
+.PHONY : rai/rai/Kin/dof_particles.o
+
+# target to build an object file
+rai/rai/Kin/dof_particles.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rai.dir/build.make CMakeFiles/rai.dir/rai/rai/Kin/dof_particles.cpp.o
+.PHONY : rai/rai/Kin/dof_particles.cpp.o
+
+rai/rai/Kin/dof_particles.i: rai/rai/Kin/dof_particles.cpp.i
+.PHONY : rai/rai/Kin/dof_particles.i
+
+# target to preprocess a source file
+rai/rai/Kin/dof_particles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rai.dir/build.make CMakeFiles/rai.dir/rai/rai/Kin/dof_particles.cpp.i
+.PHONY : rai/rai/Kin/dof_particles.cpp.i
+
+rai/rai/Kin/dof_particles.s: rai/rai/Kin/dof_particles.cpp.s
+.PHONY : rai/rai/Kin/dof_particles.s
+
+# target to generate assembly for a file
+rai/rai/Kin/dof_particles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rai.dir/build.make CMakeFiles/rai.dir/rai/rai/Kin/dof_particles.cpp.s
+.PHONY : rai/rai/Kin/dof_particles.cpp.s
+
 rai/rai/Kin/feature.o: rai/rai/Kin/feature.cpp.o
 .PHONY : rai/rai/Kin/feature.o
 
@@ -3779,29 +3803,53 @@ src/BotOp/bot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rai.dir/build.make CMakeFiles/rai.dir/src/BotOp/bot.cpp.s
 .PHONY : src/BotOp/bot.cpp.s
 
-src/BotOp/pyBot.o: src/BotOp/pyBot.cpp.o
+src/BotOp/motionHelpers.o: src/BotOp/motionHelpers.cpp.o
+.PHONY : src/BotOp/motionHelpers.o
+
+# target to build an object file
+src/BotOp/motionHelpers.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rai.dir/build.make CMakeFiles/rai.dir/src/BotOp/motionHelpers.cpp.o
+.PHONY : src/BotOp/motionHelpers.cpp.o
+
+src/BotOp/motionHelpers.i: src/BotOp/motionHelpers.cpp.i
+.PHONY : src/BotOp/motionHelpers.i
+
+# target to preprocess a source file
+src/BotOp/motionHelpers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rai.dir/build.make CMakeFiles/rai.dir/src/BotOp/motionHelpers.cpp.i
+.PHONY : src/BotOp/motionHelpers.cpp.i
+
+src/BotOp/motionHelpers.s: src/BotOp/motionHelpers.cpp.s
+.PHONY : src/BotOp/motionHelpers.s
+
+# target to generate assembly for a file
+src/BotOp/motionHelpers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rai.dir/build.make CMakeFiles/rai.dir/src/BotOp/motionHelpers.cpp.s
+.PHONY : src/BotOp/motionHelpers.cpp.s
+
+src/BotOp/pyBot.o: src/BotOp/pyBot.cxx.o
 .PHONY : src/BotOp/pyBot.o
 
 # target to build an object file
-src/BotOp/pyBot.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpybot.dir/build.make CMakeFiles/libpybot.dir/src/BotOp/pyBot.cpp.o
-.PHONY : src/BotOp/pyBot.cpp.o
+src/BotOp/pyBot.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpybot.dir/build.make CMakeFiles/libpybot.dir/src/BotOp/pyBot.cxx.o
+.PHONY : src/BotOp/pyBot.cxx.o
 
-src/BotOp/pyBot.i: src/BotOp/pyBot.cpp.i
+src/BotOp/pyBot.i: src/BotOp/pyBot.cxx.i
 .PHONY : src/BotOp/pyBot.i
 
 # target to preprocess a source file
-src/BotOp/pyBot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpybot.dir/build.make CMakeFiles/libpybot.dir/src/BotOp/pyBot.cpp.i
-.PHONY : src/BotOp/pyBot.cpp.i
+src/BotOp/pyBot.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpybot.dir/build.make CMakeFiles/libpybot.dir/src/BotOp/pyBot.cxx.i
+.PHONY : src/BotOp/pyBot.cxx.i
 
-src/BotOp/pyBot.s: src/BotOp/pyBot.cpp.s
+src/BotOp/pyBot.s: src/BotOp/pyBot.cxx.s
 .PHONY : src/BotOp/pyBot.s
 
 # target to generate assembly for a file
-src/BotOp/pyBot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpybot.dir/build.make CMakeFiles/libpybot.dir/src/BotOp/pyBot.cpp.s
-.PHONY : src/BotOp/pyBot.cpp.s
+src/BotOp/pyBot.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpybot.dir/build.make CMakeFiles/libpybot.dir/src/BotOp/pyBot.cxx.s
+.PHONY : src/BotOp/pyBot.cxx.s
 
 src/Franka/controlEmulator.o: src/Franka/controlEmulator.cpp.o
 .PHONY : src/Franka/controlEmulator.o
@@ -4147,6 +4195,9 @@ help:
 	@echo "... rai/rai/Kin/cameraview.o"
 	@echo "... rai/rai/Kin/cameraview.i"
 	@echo "... rai/rai/Kin/cameraview.s"
+	@echo "... rai/rai/Kin/dof_particles.o"
+	@echo "... rai/rai/Kin/dof_particles.i"
+	@echo "... rai/rai/Kin/dof_particles.s"
 	@echo "... rai/rai/Kin/feature.o"
 	@echo "... rai/rai/Kin/feature.i"
 	@echo "... rai/rai/Kin/feature.s"
@@ -4387,6 +4438,9 @@ help:
 	@echo "... src/BotOp/bot.o"
 	@echo "... src/BotOp/bot.i"
 	@echo "... src/BotOp/bot.s"
+	@echo "... src/BotOp/motionHelpers.o"
+	@echo "... src/BotOp/motionHelpers.i"
+	@echo "... src/BotOp/motionHelpers.s"
 	@echo "... src/BotOp/pyBot.o"
 	@echo "... src/BotOp/pyBot.i"
 	@echo "... src/BotOp/pyBot.s"

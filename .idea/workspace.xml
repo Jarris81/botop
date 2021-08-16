@@ -5,9 +5,9 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="LISRobotLab" targetName="rai" />
-      <config projectName="LISRobotLab" targetName="libry" />
-      <config projectName="LISRobotLab" targetName="libpybot" />
+      <config projectName="LISRobotOperation" targetName="rai" />
+      <config projectName="LISRobotOperation" targetName="libry" />
+      <config projectName="LISRobotOperation" targetName="libpybot" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -17,24 +17,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9b64807-4d6a-4225-b078-4d43e717c293" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/bot/rai.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BotOp/motionHelpers.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BotOp/motionHelpers.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/bot/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bot/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rai" beforeDir="false" afterPath="$PROJECT_DIR$/rai" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rai-robotModels" beforeDir="false" afterPath="$PROJECT_DIR$/rai-robotModels" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BotOp/bot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/BotOp/bot.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BotOp/bot.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/BotOp/bot.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BotOp/pyBot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/BotOp/pyBot.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Franka/franka.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Franka/franka.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Franka/franka.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Franka/franka.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Franka/help.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Franka/help.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/08-pnp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/08-pnp/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/08-pnp/rai.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/test/08-pnp/rai.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/09-pybind/main.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/09-pybind/main.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Robotiq/RobotiqGripper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Robotiq/RobotiqGripper.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,9 +65,9 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.libpybot">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="libpybot" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LISRobotOperation" TARGET_NAME="libpybot" CONFIG_NAME="Debug">
@@ -140,6 +127,7 @@
       <workItem from="1629058365931" duration="6000" />
       <workItem from="1629064040851" duration="3000" />
       <workItem from="1629064604941" duration="2548000" />
+      <workItem from="1629119675221" duration="609000" />
     </task>
     <servers />
   </component>

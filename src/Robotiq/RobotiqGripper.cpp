@@ -22,7 +22,6 @@ RobotiqGripper::RobotiqGripper(uint whichRobot)
   serialPort->set_option(serial_port_base::parity(serial_port_base::parity::none));
 
   // send initialization command
-  -
 
 
 }
