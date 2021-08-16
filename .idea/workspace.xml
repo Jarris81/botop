@@ -17,23 +17,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9b64807-4d6a-4225-b078-4d43e717c293" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/bot/rai.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BotOp/motionHelpers.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BotOp/motionHelpers.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LISRobotLab.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LISRobotLab.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bot/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bot/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rai" beforeDir="false" afterPath="$PROJECT_DIR$/rai" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rai-robotModels" beforeDir="false" afterPath="$PROJECT_DIR$/rai-robotModels" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BotOp/bot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/BotOp/bot.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BotOp/bot.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/BotOp/bot.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BotOp/pyBot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/BotOp/pyBot.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BotOp/pyBot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/BotOp/pyBot.cxx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Franka/franka.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Franka/franka.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Franka/gripper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Franka/gripper.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Franka/gripper.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Franka/gripper.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RealSense/RealSenseThread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/RealSense/RealSenseThread.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/01-openClose/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/01-openClose/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/06-fastPath/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/06-fastPath/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/06-fastPath/plt" beforeDir="false" afterPath="$PROJECT_DIR$/test/06-fastPath/plt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Franka/franka.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Franka/franka.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Franka/help.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Franka/help.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/08-pnp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/08-pnp/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/08-pnp/rai.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/test/08-pnp/rai.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/09-pybind/main.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test/09-pybind/main.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,17 +78,22 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.libpybot">
-    <configuration name="libpybot" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LISRobotLab" TARGET_NAME="libpybot" CONFIG_NAME="Debug">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="libry" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LISRobotLab" TARGET_NAME="libry" CONFIG_NAME="Debug">
+    <configuration name="libpybot" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LISRobotOperation" TARGET_NAME="libpybot" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="rai" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LISRobotLab" TARGET_NAME="rai" CONFIG_NAME="Debug">
+    <configuration name="libry" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LISRobotOperation" TARGET_NAME="libry" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rai" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LISRobotOperation" TARGET_NAME="rai" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
