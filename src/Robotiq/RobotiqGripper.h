@@ -1,11 +1,15 @@
 #pragma once
 
+<<<<<<< HEAD
 //#include <Core/util.h>
 #include <Core/thread.h>
+=======
+>>>>>>> marc/master
 #include <Franka/controlEmulator.h>
 #include <boost/asio/serial_port.hpp>
 #include <boost/asio.hpp>
 
+<<<<<<< HEAD
 // all values taken from docs of gripper
 const double MAX_WIDTH = 0.85; // in mm
 
@@ -59,4 +63,25 @@ struct RobotiqGripper : rai::GripperAbstraction, Thread{
 private:
     std::shared_ptr<serial_port> serialPort;
 
+=======
+struct RobotiqGripper : rai::GripperAbstraction {
+  double maxWidth;
+
+  RobotiqGripper(uint whichRobot=0);
+  ~RobotiqGripper();
+
+  void goTo(double force, double width, double speed);
+
+  void open(double width, double speed){ goTo(0., width, speed); }
+  void close(double force, double width, double speed){ goTo(force, width, speed); }
+
+  double pos();
+
+  bool isDone();
+
+private:
+  std::shared_ptr<boost::asio::serial_port> serialPort;
+
+  void getStatus();
+>>>>>>> marc/master
 };

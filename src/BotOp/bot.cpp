@@ -4,12 +4,14 @@
 #include <Kin/F_qFeatures.h>
 #include <Kin/viewer.h>
 #include <KOMO/pathTools.h>
+#include <Robotiq/RobotiqGripper.h>
 
 //===========================================================================
 
 BotOp::BotOp(rai::Configuration& C, bool useRealRobot){
   bool useGripper = rai::getParameter<bool>("botUseGripper", true);
-  rai::String useArm = rai::getParameter<rai::String>("botUseArm", "left");
+  bool robotiq = rai::getParameter<bool>("botRobotiq", true);
+  rai::String useArm = rai::getParameter<rai::String>("botUseArm", "both");
 
   C.ensure_indexedJoints();
   qHome = C.getJointState();
@@ -25,14 +27,18 @@ BotOp::BotOp(rai::Configuration& C, bool useRealRobot){
       robotL = make_unique<FrankaThreadNew>(0, franka_getJointIndices(C,'l'), cmd, state);
       robotR = make_unique<FrankaThreadNew>(1, franka_getJointIndices(C,'r'), cmd, state);
       if(useGripper){
-        gripperL = make_unique<FrankaGripper>(0);
-        gripperR = make_unique<FrankaGripper>(1);
+        if(robotiq){
+          gripperL = make_unique<RobotiqGripper>(0);
+        }else{
+          gripperL = make_unique<FrankaGripper>(0);
+          gripperR = make_unique<FrankaGripper>(1);
+        }
       }
     }else{
       HALT("you need a botUseArm configuration (right, left, both)");
     }
   }else{
-    robotL = make_unique<ControlEmulator>(C); //, StringA(), .001, 10.);
+    robotL = make_unique<ControlEmulator>(C, cmd, state); //, StringA(), .001, 10.);
     if(useGripper) gripperL = make_unique<GripperEmulator>();
   }
   C.setJointState(get_q());
