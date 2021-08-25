@@ -101,30 +101,30 @@ void addBoxPlaceObjectives(KOMO& komo, double time, rai::ArgWord dir, const char
   FeatureSymbol zVector = FS_none;
   arr zVectorTarget = {0.,0.,1.};
   if(dir==rai::_xAxis){
-    relPos = .5*boxSize(0)+.03;
+    relPos = .5*boxSize(0)+.05;
     zVector = FS_vectorX;
   } else if(dir==rai::_yAxis){
-    relPos = .5*boxSize(1)+.03;
+    relPos = .5*boxSize(1)+.05;
     zVector = FS_vectorY;
   } else if(dir==rai::_zAxis){
-    relPos = .5*boxSize(2)+.03;
+    relPos = .5*boxSize(2)+.05;
     zVector = FS_vectorZ;
   } else if(dir==rai::_xNegAxis){
-    relPos = .5*boxSize(0)+.03;
+    relPos = .5*boxSize(0)+.05;
     zVector = FS_vectorX;
     zVectorTarget *= -1.;
   } else if(dir==rai::_yNegAxis){
-    relPos = .5*boxSize(1)+.03;
+    relPos = .5*boxSize(1)+.05;
     zVector = FS_vectorY;
     zVectorTarget *= -1.;
   } else if(dir==rai::_zNegAxis){
-    relPos = .5*boxSize(2)+.03;
+    relPos = .5*boxSize(2)+.05;
     zVector = FS_vectorZ;
     zVectorTarget *= -1.;
   }
 
   //position: fixed
-  komo.addObjective({time}, FS_positionDiff, {boxName, "table"}, OT_eq, {1e2}, {-.3, .0, relPos});
+  komo.addObjective({time}, FS_positionDiff, {boxName, "table"}, OT_eq, {1e2}, {-.3, .1, relPos});
 
   //orientation: Y-up
   komo.addObjective({time-.2, time}, zVector, {boxName}, OT_eq, {1e1}, zVectorTarget);
@@ -153,7 +153,7 @@ arr getStartGoalPath(rai::Configuration& C, const arr& qTarget, const arr& qHome
 
   KOMO komo;
   komo.setModel(C, false);
-  komo.setTiming(1., 32, 3., 2);
+  komo.setTiming(1., 32, 5., 2);
   komo.add_qControlObjective({}, 2, 1.);
 
   //constrain target - either endeff target or qTarget
@@ -167,7 +167,7 @@ arr getStartGoalPath(rai::Configuration& C, const arr& qTarget, const arr& qHome
   komo.addObjective({1.}, FS_qItself, {}, OT_eq, {1e0}, {}, 1);
 
   //homing
-  komo.addObjective({.4,.6}, FS_qItself, {}, OT_sos, {1.}, qHome);
+  if(qHome.N) komo.addObjective({.4,.6}, FS_qItself, {}, OT_sos, {1.}, qHome);
 
   // collision avoidances
   for(const Avoid& a:avoids){
@@ -198,7 +198,7 @@ arr getStartGoalPath(rai::Configuration& C, const arr& qTarget, const arr& qHome
 
 //  komo.initWithWaypoints({target_q});
 //  komo.initWithConstant(target_q);
-  komo.optimize(0.);
+  komo.optimize(0., OptOptions().set_stopTolerance(1e-3));
 //  cout <<komo.getReport(true) <<endl;
   cout <<"  path -- time:" <<komo.timeTotal <<"\t sos:" <<komo.sos <<"\t ineq:" <<komo.ineq <<"\t eq:" <<komo.eq <<endl;
 
@@ -206,7 +206,7 @@ arr getStartGoalPath(rai::Configuration& C, const arr& qTarget, const arr& qHome
 //  FILE("z.path") <<path <<endl;
 //  while(komo.view_play(true));
 
-  if(komo.sos>50. || komo.ineq>.2 || komo.eq>.2){
+  if(komo.sos>50. || komo.ineq>.1 || komo.eq>.1){
     FILE("z.path") <<path <<endl;
     cout <<komo.getReport(true) <<endl;
     LOG(-2) <<"WARNING!";
@@ -218,7 +218,7 @@ arr getStartGoalPath(rai::Configuration& C, const arr& qTarget, const arr& qHome
 //    komo.animateOptimization=4;
 //    komo.verbose=8;
     komo.optimize();
-    if(komo.sos>50. || komo.ineq>.2 || komo.eq>.2){
+    if(komo.sos>50. || komo.ineq>.1 || komo.eq>.1){
       LOG(-1) <<"INFEASIBLE";
       while(komo.view_play(true));
       return {};
