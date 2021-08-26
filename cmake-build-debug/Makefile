@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named bot
+
+# Build rule for target.
+bot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bot
+.PHONY : bot
+
+# fast build rule for target.
+bot/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/build
+.PHONY : bot/fast
+
+#=============================================================================
 # Target rules for targets named rai
 
 # Build rule for target.
@@ -154,6 +167,67 @@ libpybot: cmake_check_build_system
 libpybot/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libpybot.dir/build.make CMakeFiles/libpybot.dir/build
 .PHONY : libpybot/fast
+
+#=============================================================================
+# Target rules for targets named kinEdit
+
+# Build rule for target.
+kinEdit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kinEdit
+.PHONY : kinEdit
+
+# fast build rule for target.
+kinEdit/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinEdit.dir/build.make CMakeFiles/kinEdit.dir/build
+.PHONY : kinEdit/fast
+
+bin/bot/main.o: bin/bot/main.cpp.o
+.PHONY : bin/bot/main.o
+
+# target to build an object file
+bin/bot/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/bin/bot/main.cpp.o
+.PHONY : bin/bot/main.cpp.o
+
+bin/bot/main.i: bin/bot/main.cpp.i
+.PHONY : bin/bot/main.i
+
+# target to preprocess a source file
+bin/bot/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/bin/bot/main.cpp.i
+.PHONY : bin/bot/main.cpp.i
+
+bin/bot/main.s: bin/bot/main.cpp.s
+.PHONY : bin/bot/main.s
+
+# target to generate assembly for a file
+bin/bot/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/bin/bot/main.cpp.s
+.PHONY : bin/bot/main.cpp.s
+
+rai/bin/src_kinEdit/main.o: rai/bin/src_kinEdit/main.cpp.o
+.PHONY : rai/bin/src_kinEdit/main.o
+
+# target to build an object file
+rai/bin/src_kinEdit/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinEdit.dir/build.make CMakeFiles/kinEdit.dir/rai/bin/src_kinEdit/main.cpp.o
+.PHONY : rai/bin/src_kinEdit/main.cpp.o
+
+rai/bin/src_kinEdit/main.i: rai/bin/src_kinEdit/main.cpp.i
+.PHONY : rai/bin/src_kinEdit/main.i
+
+# target to preprocess a source file
+rai/bin/src_kinEdit/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinEdit.dir/build.make CMakeFiles/kinEdit.dir/rai/bin/src_kinEdit/main.cpp.i
+.PHONY : rai/bin/src_kinEdit/main.cpp.i
+
+rai/bin/src_kinEdit/main.s: rai/bin/src_kinEdit/main.cpp.s
+.PHONY : rai/bin/src_kinEdit/main.s
+
+# target to generate assembly for a file
+rai/bin/src_kinEdit/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kinEdit.dir/build.make CMakeFiles/kinEdit.dir/rai/bin/src_kinEdit/main.cpp.s
+.PHONY : rai/bin/src_kinEdit/main.cpp.s
 
 rai/rai/Algo/MLcourse.o: rai/rai/Algo/MLcourse.cpp.o
 .PHONY : rai/rai/Algo/MLcourse.o
@@ -3979,9 +4053,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... bot"
+	@echo "... kinEdit"
 	@echo "... libpybot"
 	@echo "... libry"
 	@echo "... rai"
+	@echo "... bin/bot/main.o"
+	@echo "... bin/bot/main.i"
+	@echo "... bin/bot/main.s"
+	@echo "... rai/bin/src_kinEdit/main.o"
+	@echo "... rai/bin/src_kinEdit/main.i"
+	@echo "... rai/bin/src_kinEdit/main.s"
 	@echo "... rai/rai/Algo/MLcourse.o"
 	@echo "... rai/rai/Algo/MLcourse.i"
 	@echo "... rai/rai/Algo/MLcourse.s"

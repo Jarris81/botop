@@ -4,19 +4,6 @@ project(LISRobotOperation)
 
 set(CMAKE_CXX_STANDARD 14 CACHE STRING "C++ version selection")
 
-execute_process(
-    COMMAND bash "-c" "python3 -m pybind11 --cmakedir" 
-    OUTPUT_STRIP_TRAILING_WHITESPACE OUTPUT_VARIABLE pybind11_DIR
-)
-
-option(USE_OPENCV "Link to opencv" OFF)
-option(USE_REALSENSE "Link to realsense2 driver library" OFF)
-
-#find_package( Bullet REQUIRED )
-#find_package(pybind11)
-find_package(Boost REQUIRED system filesystem)
-#find_package(Boost COMPONENTS system ...)
-
 option(USE_PYBIND "build python bindings" ON)
 option(USE_OPENCV "link to opencv" OFF)
 option(USE_REALSENSE "link to realsense2 driver library" OFF)
@@ -108,6 +95,7 @@ target_link_libraries(rai
   franka boost_system
   #${BULLET_LIBRARIES}
   #PhysX3Extensions PhysX3_x64 PhysX3Cooking_x64 PhysX3Common_x64 PxFoundation_x64
+
   )
 
 ################################################################################
@@ -151,10 +139,10 @@ target_link_libraries(libpybot PRIVATE
 
 ################################################################################
 
-#add_executable(kinEdit rai/bin/src_kinEdit/main.cpp)
-#target_link_libraries(kinEdit rai)
+add_executable(kinEdit rai/bin/src_kinEdit/main.cpp)
+target_link_libraries(kinEdit rai)
 
-#add_executable(bot bin/bot/main.cpp src/Robotiq/RobotiqGripper.h src/Robotiq/RobotiqGripper.cpp)
-#target_link_libraries(bot rai)
+add_executable(bot bin/bot/main.cpp)
+target_link_libraries(bot rai)
 
 

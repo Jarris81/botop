@@ -6,8 +6,6 @@ int main(int argc, char** argv) {
   rai::initCmdLine(argc, argv);
 
   {
-    std::cout<<"hello"<<std::endl;
-
     std::shared_ptr<rai::GripperAbstraction> G_ri;
     if(rai::getParameter<bool>("robotiq", true)){
       G_ri = make_shared<RobotiqGripper>(0);
