@@ -14,6 +14,8 @@ const double MAX_FORCE = 235; // in Newton
 const double MIN_SPEED = 0.02;
 const double MAX_SPEED = 0.15; // in  mm/s
 
+const char *robitqSerialName[2] = {"/dev/robotiq_l_gripper", "/dev/robotiq_r_gripper"};
+
 static int msg_len=0;
 static uint8_t msg[301];
 
@@ -68,7 +70,7 @@ RobotiqGripper::RobotiqGripper(uint whichRobot) {
   boost::asio::io_service io;
   serialPort = std::make_shared<boost::asio::serial_port>(io);
 
-  serialPort->open("/dev/ttyUSB0");
+  serialPort->open(robitqSerialName[whichRobot]);
 
   serialPort->set_option(boost::asio::serial_port_base::baud_rate(115200));
   serialPort->set_option(boost::asio::serial_port_base::stop_bits(boost::asio::serial_port_base::stop_bits::one));

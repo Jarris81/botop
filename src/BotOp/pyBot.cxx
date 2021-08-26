@@ -32,7 +32,15 @@ void init_PyBot(pybind11::module& m) {
   
   pybind11::class_<BotOp, shared_ptr<BotOp>>(m, "BotOp", "")
 
-  .def(pybind11::init<rai::Configuration&, bool>(), "")
+  .def(pybind11::init([](shared_ptr<rai::Configuration>& C, const char* botUseArm){
+      //write values to rai.cfg
+      std::ofstream ofs;
+      ofs.open("/../../bin/bot/rai.cfg", std::ofstream::out | std::ofstream::trunc);
+      ofs<<"botUseArm: "<<botUseArm<<endl;
+      ofs<<"botRobotiq"<<true<<endl;
+      ofs.close();
+      return make_shared<BotOp>(*C, true);
+  }))
 
   .def("get_t", &BotOp::get_t)
   .def("get_qHome", &BotOp::get_qHome)
@@ -55,7 +63,7 @@ void init_PyBot(pybind11::module& m) {
   .def("home", &BotOp::home)
   .def("hold", &BotOp::hold)
 
-  .def("waitGripperIdle", &BotOp::waitGripperIdle)
+//  .def("waitGripperIdle", &BotOp::waitGripperIdle)
 
   ;
 

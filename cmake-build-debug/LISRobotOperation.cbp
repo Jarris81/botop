@@ -5,7 +5,7 @@
 		<Option title="LISRobotOperation"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_filesystem-1.71.0\;CMake Files\..\..\.local\;CMake Files\..\..\.local\lib\;CMake Files\..\..\.local\lib\python3.8\;CMake Files\..\..\.local\lib\python3.8\site-packages\;CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\;CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\;CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\cmake\;CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\cmake\pybind11\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\.local\;CMake Files\..\..\.local\lib\;CMake Files\..\..\.local\lib\python3.8\;CMake Files\..\..\.local\lib\python3.8\site-packages\;CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\;CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\;CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\cmake\;CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\cmake\pybind11\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
@@ -22,6 +22,106 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bot">
+				<Option output="/home/jasonharris/git/botop/cmake-build-debug/bot" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_X11"/>
+					<Add option="-DRAI_LAPACK"/>
+					<Add option="-DRAI_EIGEN"/>
+					<Add option="-DRAI_PTHREAD"/>
+					<Add option="-DRAI_GL"/>
+					<Add option="-DRAI_GLFW"/>
+					<Add option="-DRAI_ANN"/>
+					<Add option="-DRAI_QHULL"/>
+					<Add option="-DRAI_ASSIMP"/>
+					<Add option="-DNO_CYCLE_DETECTION"/>
+					<Add option="-DRAI_PNG"/>
+					<Add option="-DRAI_PLY"/>
+					<Add option="-DRAI_SWIFT"/>
+					<Add option="-DRAI_GJK"/>
+					<Add option="-DRAI_FCL"/>
+					<Add option="-DRAI_CCD"/>
+					<Add option="-DRAI_FRANKA"/>
+					<Add option="-DRAI_PYBIND"/>
+					<Add directory="/home/jasonharris/git/botop/src"/>
+					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jasonharris/opt/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 bot"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bot/fast">
+				<Option output="/home/jasonharris/git/botop/cmake-build-debug/bot" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_X11"/>
+					<Add option="-DRAI_LAPACK"/>
+					<Add option="-DRAI_EIGEN"/>
+					<Add option="-DRAI_PTHREAD"/>
+					<Add option="-DRAI_GL"/>
+					<Add option="-DRAI_GLFW"/>
+					<Add option="-DRAI_ANN"/>
+					<Add option="-DRAI_QHULL"/>
+					<Add option="-DRAI_ASSIMP"/>
+					<Add option="-DNO_CYCLE_DETECTION"/>
+					<Add option="-DRAI_PNG"/>
+					<Add option="-DRAI_PLY"/>
+					<Add option="-DRAI_SWIFT"/>
+					<Add option="-DRAI_GJK"/>
+					<Add option="-DRAI_FCL"/>
+					<Add option="-DRAI_CCD"/>
+					<Add option="-DRAI_FRANKA"/>
+					<Add option="-DRAI_PYBIND"/>
+					<Add directory="/home/jasonharris/git/botop/src"/>
+					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jasonharris/opt/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 bot/fast"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -211,16 +311,6 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="libpybot">
 				<Option output="/home/jasonharris/git/botop/cmake-build-debug/libpybot.cpython-38-x86_64-linux-gnu.so" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
@@ -315,7 +405,103 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="kinEdit">
+				<Option output="/home/jasonharris/git/botop/cmake-build-debug/kinEdit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_X11"/>
+					<Add option="-DRAI_LAPACK"/>
+					<Add option="-DRAI_EIGEN"/>
+					<Add option="-DRAI_PTHREAD"/>
+					<Add option="-DRAI_GL"/>
+					<Add option="-DRAI_GLFW"/>
+					<Add option="-DRAI_ANN"/>
+					<Add option="-DRAI_QHULL"/>
+					<Add option="-DRAI_ASSIMP"/>
+					<Add option="-DNO_CYCLE_DETECTION"/>
+					<Add option="-DRAI_PNG"/>
+					<Add option="-DRAI_PLY"/>
+					<Add option="-DRAI_SWIFT"/>
+					<Add option="-DRAI_GJK"/>
+					<Add option="-DRAI_FCL"/>
+					<Add option="-DRAI_CCD"/>
+					<Add option="-DRAI_FRANKA"/>
+					<Add option="-DRAI_PYBIND"/>
+					<Add directory="/home/jasonharris/git/botop/src"/>
+					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jasonharris/opt/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 kinEdit"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="kinEdit/fast">
+				<Option output="/home/jasonharris/git/botop/cmake-build-debug/kinEdit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_X11"/>
+					<Add option="-DRAI_LAPACK"/>
+					<Add option="-DRAI_EIGEN"/>
+					<Add option="-DRAI_PTHREAD"/>
+					<Add option="-DRAI_GL"/>
+					<Add option="-DRAI_GLFW"/>
+					<Add option="-DRAI_ANN"/>
+					<Add option="-DRAI_QHULL"/>
+					<Add option="-DRAI_ASSIMP"/>
+					<Add option="-DNO_CYCLE_DETECTION"/>
+					<Add option="-DRAI_PNG"/>
+					<Add option="-DRAI_PLY"/>
+					<Add option="-DRAI_SWIFT"/>
+					<Add option="-DRAI_GJK"/>
+					<Add option="-DRAI_FCL"/>
+					<Add option="-DRAI_CCD"/>
+					<Add option="-DRAI_FRANKA"/>
+					<Add option="-DRAI_PYBIND"/>
+					<Add directory="/home/jasonharris/git/botop/src"/>
+					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/jasonharris/opt/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 kinEdit/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/home/jasonharris/git/botop/bin/bot/main.cpp">
+			<Option target="bot"/>
+		</Unit>
+		<Unit filename="/home/jasonharris/git/botop/rai/bin/src_kinEdit/main.cpp">
+			<Option target="kinEdit"/>
+		</Unit>
 		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/MLcourse.cpp">
 			<Option target="rai"/>
 		</Unit>
@@ -1239,45 +1425,6 @@
 		</Unit>
 		<Unit filename="/home/jasonharris/git/botop/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../../../usr/lib/x86_64-linux-gnu/cmake/BoostDetectToolset-1.71.0.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\"/>
-		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\"/>
-		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\"/>
-		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0/boost_headers-config-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\"/>
-		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0/boost_headers-config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\"/>
-		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0/boost_system-config-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.71.0\"/>
-		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0/boost_system-config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.71.0\"/>
-		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0/libboost_system-variant-shared.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.71.0\"/>
-		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0/libboost_system-variant-static.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_system-1.71.0\"/>
-		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.71.0/boost_filesystem-config-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_filesystem-1.71.0\"/>
-		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.71.0/boost_filesystem-config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_filesystem-1.71.0\"/>
-		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.71.0/libboost_filesystem-variant-shared.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_filesystem-1.71.0\"/>
-		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_filesystem-1.71.0/libboost_filesystem-variant-static.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_filesystem-1.71.0\"/>
 		</Unit>
 		<Unit filename="/home/jasonharris/git/botop/../../.local/lib/python3.8/site-packages/pybind11/share/cmake/pybind11/FindPythonLibsNew.cmake">
 			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\cmake\pybind11\"/>

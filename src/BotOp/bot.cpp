@@ -9,7 +9,7 @@
 //===========================================================================
 
 BotOp::BotOp(rai::Configuration& C, bool useRealRobot){
-  bool useGripper = rai::getParameter<bool>("botUseGripper", true);
+  bool useGripper = rai::getParameter<bool>("botUseGripper", false);
   bool robotiq = rai::getParameter<bool>("botRobotiq", true);
   rai::String useArm = rai::getParameter<rai::String>("botUseArm", "both");
 
