@@ -8,6 +8,8 @@
 #include <Franka/controlEmulator.h>
 
 //===========================================================================
+enum WhichRobot {LEFT, RIGHT, BOTH};
+enum GripperType {NONE, FRANKA, ROBOTIQ};
 
 struct BotOp{
   Var<rai::CtrlCmdMsg> cmd;
@@ -20,7 +22,8 @@ struct BotOp{
   arr qHome;
   int keypressed=0;
 
-  BotOp(rai::Configuration& C, bool useRealRobot);
+
+  BotOp(rai::Configuration& C, bool useRealRobot, rai::String useArm, rai::String gripperType);
   ~BotOp();
 
   //-- state info
@@ -38,8 +41,8 @@ struct BotOp{
   void setControllerWriteData(int _writeData){ if(robotL) robotL->writeData=_writeData;  if(robotR) robotR->writeData=_writeData;  }
 
   //-- gripper commands - directly calling the gripper abstraction
-  void gripperOpen(double width=.075, double speed=.2){ if(!gripperL) LOG(-1) <<"gripper disabled"; else gripperL->open(width, speed); }
-  void gripperClose(double force=10, double width=.05, double speed=.1){ if(!gripperL) LOG(-1) <<"gripper disabled"; else gripperL->close(force, width, speed); }
+  void gripperOpen(const rai::String whichRobot, double width=.075, double speed=.2);
+  void gripperClose(const rai::String whichRobot, double force=10, double width=.05, double speed=.1);
   double gripperPos(){ if(!gripperL){ LOG(-1) <<"gripper disabled"; return 0.; } else return gripperL->pos(); }
   bool isDone() {if(!gripperL){ LOG(-1) <<"gripper disabled"; return false; } else return gripperL->isDone(); }
 

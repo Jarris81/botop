@@ -10,8 +10,8 @@ int main(int argc, char * argv[]){
   rai::Configuration C;
 
   C.addFile(rai::raiPath("../rai-robotModels/scenarios/pandasTable.g"));
-
-  BotOp bot(C, !rai::checkParameter<bool>("sim"));
+  //TODO
+  BotOp bot(C, !rai::checkParameter<bool>("sim"), "BOTH", "ROBOTIQ");
 
   if(rai::checkParameter<bool>("float")){
     bot.hold(true, false);

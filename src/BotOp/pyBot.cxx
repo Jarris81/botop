@@ -9,8 +9,8 @@
 #ifdef RAI_PYBIND
 
 #include "pyBot.h"
-
 #include <ry/types.h>
+#include <Robotiq/RobotiqGripper.h>
 
 #include "bot.h"
 
@@ -29,43 +29,49 @@ PYBIND11_MODULE(libpybot, m) {
 }
 
 void init_PyBot(pybind11::module& m) {
-  
-  pybind11::class_<BotOp, shared_ptr<BotOp>>(m, "BotOp", "")
 
-  .def(pybind11::init([](shared_ptr<rai::Configuration>& C, bool useRealRobot, const char* botUseArm){
-      //write values to rai.cfg
-      std::ofstream ofs;
-      ofs.open("/../../bin/bot/rai.cfg", std::ofstream::out | std::ofstream::trunc);
-      ofs<<"botUseArm: "<<botUseArm<<endl;
-      ofs<<"botRobotiq"<<true<<endl;
-      ofs.close();
-      return make_shared<BotOp>(*C, useRealRobot);
-  }))
+    pybind11::class_<BotOp, shared_ptr<BotOp>>(m, "BotOp", "")
 
-  .def("get_t", &BotOp::get_t)
-  .def("get_qHome", &BotOp::get_qHome)
-  .def("get_q", &BotOp::get_q)
-  .def("get_qDot", &BotOp::get_qDot)
-  .def("getTimeToEnd", &BotOp::getTimeToEnd)
+//  .def(pybind11::init([](shared_ptr<rai::Configuration>& C, bool useRealRobot, bool useGripper){
+//      return make_shared<BotOp>(*C, useRealRobot, useGripper);
+//  }))
+            .def(pybind11::init<rai::Configuration &, bool, rai::String, rai::String>(), "")
 
-  .def("move", &BotOp::move) 
-  .def("moveAutoTimed", &BotOp::moveAutoTimed)
-  .def("moveOverride", &BotOp::moveOverride)
-  .def("moveLeap", &BotOp::moveLeap)
-  .def("setControllerWriteData", &BotOp::setControllerWriteData)
+            .def("get_t", &BotOp::get_t)
+            .def("get_qHome", &BotOp::get_qHome)
+            .def("get_q", &BotOp::get_q)
+            .def("get_qDot", &BotOp::get_qDot)
+            .def("getTimeToEnd", &BotOp::getTimeToEnd)
 
-  .def("gripperOpen", &BotOp::gripperOpen)
-  .def("gripperClose", &BotOp::gripperClose)
-  .def("gripperPos", &BotOp::gripperPos)
+            .def("move", &BotOp::move)
+            .def("moveAutoTimed", &BotOp::moveAutoTimed)
+            .def("moveOverride", &BotOp::moveOverride)
+            .def("moveLeap", &BotOp::moveLeap)
+            .def("setControllerWriteData", &BotOp::setControllerWriteData)
 
-  .def("step", &BotOp::step)
+            .def("gripperOpen", &BotOp::gripperOpen)
+            .def("gripperClose", &BotOp::gripperClose)
+            .def("gripperPos", &BotOp::gripperPos)
 
-  .def("home", &BotOp::home)
-  .def("hold", &BotOp::hold)
+            .def("step", &BotOp::step)
+
+            .def("home", &BotOp::home)
+            .def("hold", &BotOp::hold);
 
 //  .def("waitGripperIdle", &BotOp::waitGripperIdle)
 
-  ;
+
+//TODO why is this not working??
+//#define ENUMVAL(pre, x) .value(#x, pre##_##x)
+//
+//    pybind11::enum_<GripperType>(m, "GP")
+//            ENUMVAL(GP, NONE)
+//            ENUMVAL(GP, ROBOTIQ)
+//            ENUMVAL(GP, FRANKA)
+//            .export_values();
+
+//    pybind11::enum_<WhichRobot>(m, "WhichRobot")
+//            ENUMVAL(WhichRobot, RIGHT).export_values();
 
 }
 

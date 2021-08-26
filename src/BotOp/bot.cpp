@@ -8,38 +8,49 @@
 
 //===========================================================================
 
-BotOp::BotOp(rai::Configuration& C, bool useRealRobot){
-  bool useGripper = rai::getParameter<bool>("botUseGripper", false);
-  bool robotiq = rai::getParameter<bool>("botRobotiq", true);
-  rai::String useArm = rai::getParameter<rai::String>("botUseArm", "both");
+BotOp::BotOp(rai::Configuration& C, bool useRealRobot, rai::String useArm, const rai::String gripperType){
+
+  //bool robotiq = rai::getParameter<bool>("botRobotiq", botUseGripper);
+  //useArm = rai::getParameter<rai::String>("botUseArm", useArm);
 
   C.ensure_indexedJoints();
   qHome = C.getJointState();
   state.set()->initZero(qHome.N);
   if(useRealRobot){
-    if(useArm=="left"){
-      robotL = make_unique<FrankaThreadNew>(0, franka_getJointIndices(C,'l'), cmd, state);
-      if(useGripper) gripperL = make_unique<FrankaGripper>(0);
-    }else if(useArm=="right"){
-      robotR = make_unique<FrankaThreadNew>(1, franka_getJointIndices(C,'r'), cmd, state);
-      if(useGripper) gripperR = make_unique<FrankaGripper>(1);
-    }else if(useArm=="both"){
-      robotL = make_unique<FrankaThreadNew>(0, franka_getJointIndices(C,'l'), cmd, state);
-      robotR = make_unique<FrankaThreadNew>(1, franka_getJointIndices(C,'r'), cmd, state);
-      if(useGripper){
-        if(robotiq){
-          gripperL = make_unique<RobotiqGripper>(0);
-        }else{
-          gripperL = make_unique<FrankaGripper>(0);
-          gripperR = make_unique<FrankaGripper>(1);
-        }
-      }
-    }else{
-      HALT("you need a botUseArm configuration (right, left, both)");
-    }
+      if(useArm=="LEFT") {
+          robotL = make_unique<FrankaThreadNew>(0, franka_getJointIndices(C, 'l'), cmd, state);
+          if (gripperType == "FRANKA") gripperL = make_unique<FrankaGripper>(0);
+          else if (gripperType == "ROBOTIQ") gripperL = make_unique<RobotiqGripper>(0);
+      }else if(useArm=="RIGHT") {
+          robotR = make_unique<FrankaThreadNew>(1, franka_getJointIndices(C, 'r'), cmd, state);
+          if (gripperType == "FRANKA") gripperR = make_unique<FrankaGripper>(1);
+          else if (gripperType == "ROBOTIQ") gripperR = make_unique<RobotiqGripper>(1);
+      }else if(useArm=="BOTH") {
+          robotL = make_unique<FrankaThreadNew>(0, franka_getJointIndices(C, 'l'), cmd, state);
+          robotR = make_unique<FrankaThreadNew>(1, franka_getJointIndices(C, 'r'), cmd, state);
+          if (gripperType == "FRANKA") {
+              gripperL = make_unique<FrankaGripper>(0);
+              gripperR = make_unique<FrankaGripper>(1);
+          } else if (gripperType == "ROBOTIQ") {
+              gripperL = make_unique<RobotiqGripper>(0);
+              gripperR = make_unique<RobotiqGripper>(1);
+          }
+      }else HALT("you need a botUseArm configuration (right, left, both)");
+
+//    if(useArm=="left"){
+//      robotL = make_unique<FrankaThreadNew>(0, franka_getJointIndices(C,'l'), cmd, state);
+//      if(botUseGripper) gripperL = make_unique<FrankaGripper>(0);
+//    }else if(useArm=="right"){
+//
+//    }else if(useArm=="both"){
+//
+//      }
+//    }else{
+//
+//    }
   }else{
     robotL = make_unique<ControlEmulator>(C, cmd, state); //, StringA(), .001, 10.);
-    if(useGripper) gripperL = make_unique<GripperEmulator>();
+    if(gripperType=="ROBOTIQ") gripperL = make_unique<GripperEmulator>();
   }
   C.setJointState(get_q());
   C.watch(false, STRING("time: 0"));
@@ -142,6 +153,18 @@ double BotOp::moveLeap(const arr& q_target, double timeCost){
   }
   else move(~q_target, {T});
   return T;
+}
+
+void BotOp::gripperOpen(rai::String whichRobot, double width, double speed) {
+    if (whichRobot == "RIGHT") {
+        gripperR->open(width, speed);
+    }
+}
+
+void BotOp::gripperClose(rai::String whichRobot, double force, double width, double speed){
+    if (whichRobot == "RIGHT") {
+        gripperR->close(force, width, speed);
+    }
 }
 
 void BotOp::home(rai::Configuration& C){
