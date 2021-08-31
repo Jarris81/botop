@@ -11,6 +11,7 @@
 #ifdef RAI_PYBIND
 
 #include <pybind11/pybind11.h>
+#include "bot.h"
 
 void init_PyBot(pybind11::module& m);
 

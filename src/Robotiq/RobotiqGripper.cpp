@@ -83,6 +83,7 @@ RobotiqGripper::RobotiqGripper(uint whichRobot) {
                                 15));
   msg_len = serialPort->read_some(boost::asio::buffer(msg, 300));
   writeHex(msg, msg_len);
+  //Open once in beginning
 //  response: 09 10 03 E8 00 03 01 30
 }
 

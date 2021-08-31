@@ -167,6 +167,13 @@ void BotOp::gripperClose(rai::String whichRobot, double force, double width, dou
     }
 }
 
+bool BotOp::gripperDone(rai::String whichRobot){
+    if (whichRobot == "RIGHT") {
+        return gripperR->isDone();
+    }
+    return false;
+}
+
 void BotOp::home(rai::Configuration& C){
     C.gl()->raiseWindow();
     arr q=get_q();

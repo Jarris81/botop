@@ -10,9 +10,8 @@
 
 #include "pyBot.h"
 #include <ry/types.h>
-#include <Robotiq/RobotiqGripper.h>
 
-#include "bot.h"
+//#include "bot.h"
 
 template<> pybind11::array_t<double> arr2numpy(const rai::Array<double>& x){
   //default!
@@ -52,6 +51,7 @@ void init_PyBot(pybind11::module& m) {
             .def("gripperOpen", &BotOp::gripperOpen)
             .def("gripperClose", &BotOp::gripperClose)
             .def("gripperPos", &BotOp::gripperPos)
+            .def("gripperDone", &BotOp::gripperDone)
 
             .def("step", &BotOp::step)
 
@@ -62,8 +62,8 @@ void init_PyBot(pybind11::module& m) {
 
 
 //TODO why is this not working??
-//#define ENUMVAL(pre, x) .value(#x, pre##_##x)
-//
+#define ENUMVAL(pre, x) .value(#x, pre##_##x)
+
 //    pybind11::enum_<GripperType>(m, "GP")
 //            ENUMVAL(GP, NONE)
 //            ENUMVAL(GP, ROBOTIQ)
