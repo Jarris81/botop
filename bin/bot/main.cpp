@@ -60,7 +60,8 @@ int main(int argc, char * argv[]){
 
   if(rai::checkParameter<bool>("open")){
     bot.gripperL->open();
-    while(!bot.gripperL->isDone()) rai::wait(.1);
+    bot.gripperR->open();
+    while(!bot.gripperL->isDone() and !bot.gripperL->isDone()) rai::wait(.1);
   }
 
   cout <<"bye bye" <<endl;
