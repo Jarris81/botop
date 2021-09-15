@@ -41,9 +41,9 @@ struct BotOp{
   void setControllerWriteData(int _writeData){ if(robotL) robotL->writeData=_writeData;  if(robotR) robotR->writeData=_writeData;  }
 
   //-- gripper commands - directly calling the gripper abstraction
-  void gripperOpen(const rai::String whichRobot, double width=.075, double speed=.2);
-  void gripperClose(const rai::String whichRobot, double force=10, double width=.05, double speed=.1);
-  bool gripperDone(rai::String whichRobot);
+  void gripperOpen(int whichRobot, double width=.075, double speed=.2) const;
+  void gripperClose(int whichRobot, double force=10, double width=.05, double speed=.1) const;
+  bool gripperDone(int whichRobot) const;
   double gripperPos(){ if(!gripperL){ LOG(-1) <<"gripper disabled"; return 0.; } else return gripperL->pos(); }
   //-- sync the user's C with the robot, update the display, return false if motion spline is done
   bool step(rai::Configuration& C, double waitTime=.1);

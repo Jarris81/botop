@@ -5,46 +5,46 @@
 		<Option title="LISRobotOperation"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\.local\;CMake Files\..\..\.local\lib\;CMake Files\..\..\.local\lib\python3.8\;CMake Files\..\..\.local\lib\python3.8\site-packages\;CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\;CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\;CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\cmake\;CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\cmake\pybind11\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\.local\;CMake Files\..\..\.local\lib\;CMake Files\..\..\.local\lib\python3.6\;CMake Files\..\..\.local\lib\python3.6\site-packages\;CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\;CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\;CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\;CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bot">
-				<Option output="/home/jasonharris/git/botop/cmake-build-debug/bot" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option output="/home/jason/git/botop/cmake-build-debug/bot" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
 					<Add option="-DRAI_X11"/>
 					<Add option="-DRAI_LAPACK"/>
 					<Add option="-DRAI_EIGEN"/>
@@ -63,33 +63,34 @@
 					<Add option="-DRAI_CCD"/>
 					<Add option="-DRAI_FRANKA"/>
 					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jasonharris/git/botop/src"/>
-					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/home/jason/git/botop/src"/>
+					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jasonharris/opt/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/home/jason/opt/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 bot"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 bot"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bot/fast">
-				<Option output="/home/jasonharris/git/botop/cmake-build-debug/bot" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option output="/home/jason/git/botop/cmake-build-debug/bot" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
 					<Add option="-DRAI_X11"/>
 					<Add option="-DRAI_LAPACK"/>
 					<Add option="-DRAI_EIGEN"/>
@@ -108,33 +109,34 @@
 					<Add option="-DRAI_CCD"/>
 					<Add option="-DRAI_FRANKA"/>
 					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jasonharris/git/botop/src"/>
-					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/home/jason/git/botop/src"/>
+					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jasonharris/opt/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/home/jason/opt/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 bot/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 bot/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rai">
-				<Option output="/home/jasonharris/git/botop/cmake-build-debug/librai.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option output="/home/jason/git/botop/cmake-build-debug/librai.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
 					<Add option="-DRAI_X11"/>
 					<Add option="-DRAI_LAPACK"/>
 					<Add option="-DRAI_EIGEN"/>
@@ -153,33 +155,34 @@
 					<Add option="-DRAI_CCD"/>
 					<Add option="-DRAI_FRANKA"/>
 					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jasonharris/git/botop/src"/>
-					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/home/jason/git/botop/src"/>
+					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jasonharris/opt/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/home/jason/opt/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 rai"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 rai"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rai/fast">
-				<Option output="/home/jasonharris/git/botop/cmake-build-debug/librai.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option output="/home/jason/git/botop/cmake-build-debug/librai.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
 					<Add option="-DRAI_X11"/>
 					<Add option="-DRAI_LAPACK"/>
 					<Add option="-DRAI_EIGEN"/>
@@ -198,33 +201,34 @@
 					<Add option="-DRAI_CCD"/>
 					<Add option="-DRAI_FRANKA"/>
 					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jasonharris/git/botop/src"/>
-					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/home/jason/git/botop/src"/>
+					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jasonharris/opt/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/home/jason/opt/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 rai/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 rai/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="libry">
-				<Option output="/home/jasonharris/git/botop/cmake-build-debug/libry.cpython-38-x86_64-linux-gnu.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option output="/home/jason/git/botop/cmake-build-debug/libry.cpython-36m-x86_64-linux-gnu.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
 					<Add option="-DRAI_X11"/>
 					<Add option="-DRAI_LAPACK"/>
 					<Add option="-DRAI_EIGEN"/>
@@ -243,35 +247,36 @@
 					<Add option="-DRAI_CCD"/>
 					<Add option="-DRAI_FRANKA"/>
 					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jasonharris/git/botop/src"/>
-					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/home/jason/git/botop/src"/>
+					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jasonharris/opt/include"/>
-					<Add directory="/home/jasonharris/.local/lib/python3.8/site-packages/pybind11/include"/>
-					<Add directory="/usr/include/python3.8"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/home/jason/opt/include"/>
+					<Add directory="/usr/include/python3.6m"/>
+					<Add directory="/home/jason/.local/lib/python3.6/site-packages/pybind11/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 libry"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 libry"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="libry/fast">
-				<Option output="/home/jasonharris/git/botop/cmake-build-debug/libry.cpython-38-x86_64-linux-gnu.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option output="/home/jason/git/botop/cmake-build-debug/libry.cpython-36m-x86_64-linux-gnu.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
 					<Add option="-DRAI_X11"/>
 					<Add option="-DRAI_LAPACK"/>
 					<Add option="-DRAI_EIGEN"/>
@@ -290,35 +295,36 @@
 					<Add option="-DRAI_CCD"/>
 					<Add option="-DRAI_FRANKA"/>
 					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jasonharris/git/botop/src"/>
-					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/home/jason/git/botop/src"/>
+					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jasonharris/opt/include"/>
-					<Add directory="/home/jasonharris/.local/lib/python3.8/site-packages/pybind11/include"/>
-					<Add directory="/usr/include/python3.8"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/home/jason/opt/include"/>
+					<Add directory="/usr/include/python3.6m"/>
+					<Add directory="/home/jason/.local/lib/python3.6/site-packages/pybind11/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 libry/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 libry/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="libpybot">
-				<Option output="/home/jasonharris/git/botop/cmake-build-debug/libpybot.cpython-38-x86_64-linux-gnu.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option output="/home/jason/git/botop/cmake-build-debug/libpybot.cpython-36m-x86_64-linux-gnu.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
 					<Add option="-DRAI_X11"/>
 					<Add option="-DRAI_LAPACK"/>
 					<Add option="-DRAI_EIGEN"/>
@@ -337,35 +343,36 @@
 					<Add option="-DRAI_CCD"/>
 					<Add option="-DRAI_FRANKA"/>
 					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jasonharris/git/botop/src"/>
-					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/home/jason/git/botop/src"/>
+					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jasonharris/opt/include"/>
-					<Add directory="/home/jasonharris/.local/lib/python3.8/site-packages/pybind11/include"/>
-					<Add directory="/usr/include/python3.8"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/home/jason/opt/include"/>
+					<Add directory="/usr/include/python3.6m"/>
+					<Add directory="/home/jason/.local/lib/python3.6/site-packages/pybind11/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 libpybot"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 libpybot"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="libpybot/fast">
-				<Option output="/home/jasonharris/git/botop/cmake-build-debug/libpybot.cpython-38-x86_64-linux-gnu.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option output="/home/jason/git/botop/cmake-build-debug/libpybot.cpython-36m-x86_64-linux-gnu.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
 					<Add option="-DRAI_X11"/>
 					<Add option="-DRAI_LAPACK"/>
 					<Add option="-DRAI_EIGEN"/>
@@ -384,35 +391,36 @@
 					<Add option="-DRAI_CCD"/>
 					<Add option="-DRAI_FRANKA"/>
 					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jasonharris/git/botop/src"/>
-					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/home/jason/git/botop/src"/>
+					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jasonharris/opt/include"/>
-					<Add directory="/home/jasonharris/.local/lib/python3.8/site-packages/pybind11/include"/>
-					<Add directory="/usr/include/python3.8"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/home/jason/opt/include"/>
+					<Add directory="/usr/include/python3.6m"/>
+					<Add directory="/home/jason/.local/lib/python3.6/site-packages/pybind11/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 libpybot/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 libpybot/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="kinEdit">
-				<Option output="/home/jasonharris/git/botop/cmake-build-debug/kinEdit" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option output="/home/jason/git/botop/cmake-build-debug/kinEdit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
 					<Add option="-DRAI_X11"/>
 					<Add option="-DRAI_LAPACK"/>
 					<Add option="-DRAI_EIGEN"/>
@@ -431,33 +439,34 @@
 					<Add option="-DRAI_CCD"/>
 					<Add option="-DRAI_FRANKA"/>
 					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jasonharris/git/botop/src"/>
-					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/home/jason/git/botop/src"/>
+					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jasonharris/opt/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/home/jason/opt/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 kinEdit"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 kinEdit"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="kinEdit/fast">
-				<Option output="/home/jasonharris/git/botop/cmake-build-debug/kinEdit" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jasonharris/git/botop/cmake-build-debug"/>
+				<Option output="/home/jason/git/botop/cmake-build-debug/kinEdit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jason/git/botop/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DRAI_ROOT_PATH=&quot;/home/jasonharris/git/botop/rai&quot;"/>
+					<Add option="-DRAI_ROOT_PATH=&quot;/home/jason/git/botop/rai&quot;"/>
 					<Add option="-DRAI_X11"/>
 					<Add option="-DRAI_LAPACK"/>
 					<Add option="-DRAI_EIGEN"/>
@@ -476,973 +485,974 @@
 					<Add option="-DRAI_CCD"/>
 					<Add option="-DRAI_FRANKA"/>
 					<Add option="-DRAI_PYBIND"/>
-					<Add directory="/home/jasonharris/git/botop/src"/>
-					<Add directory="/home/jasonharris/git/botop/rai/rai"/>
+					<Add directory="/home/jason/git/botop/src"/>
+					<Add directory="/home/jason/git/botop/rai/rai"/>
 					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/jasonharris/opt/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/home/jason/opt/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 kinEdit/fast"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/home/jasonharris/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 kinEdit/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jason/git/botop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/jasonharris/git/botop/bin/bot/main.cpp">
+		<Unit filename="/home/jason/git/botop/bin/bot/main.cpp">
 			<Option target="bot"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/bin/src_kinEdit/main.cpp">
+		<Unit filename="/home/jason/git/botop/rai/bin/src_kinEdit/main.cpp">
 			<Option target="kinEdit"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/MLcourse.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/MLcourse.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/MLcourse.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/MLcourse.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/SplineCtrlFeed.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/SplineCtrlFeed.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/SplineCtrlFeed.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/SplineCtrlFeed.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/algos.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/algos.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/algos.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/algos.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/ann.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/ann.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/ann.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/ann.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/astar.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/astar.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/astar.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/astar.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/dataNeighbored.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/dataNeighbored.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/dataNeighbored.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/dataNeighbored.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/eigenValues.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/eigenValues.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/eigenValues.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/eigenValues.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/gaussianProcess.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/gaussianProcess.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/gaussianProcess.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/gaussianProcess.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/gpOp.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/gpOp.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/gpOp.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/gpOp.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/hungarian.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/hungarian.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/hungarian.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/hungarian.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/kalman.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/kalman.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/kalman.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/kalman.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/priorityQueue.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/priorityQueue.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/priorityQueue.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/priorityQueue.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/rrt.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/rrt.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/rrt.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/rrt.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/spline.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/spline.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Algo/spline.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Algo/spline.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlObjective.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlObjective.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlObjective.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlObjective.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlSet.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlSet.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlSet.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlSet.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlSolver.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlSolver.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlSolver.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlSolver.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlSolvers.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlSolvers.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlSolvers.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlSolvers.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlSymCommand.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlSymCommand.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlSymCommand.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlSymCommand.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlTargets.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlTargets.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlTargets.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlTargets.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlThread.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlThread.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/CtrlThread.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/CtrlThread.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/LeapMPC.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/LeapMPC.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/LeapMPC.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/LeapMPC.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/RTControllerSimulation.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/RTControllerSimulation.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/RTControllerSimulation.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/RTControllerSimulation.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/TaskControlThread.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/TaskControlThread.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/TaskControlThread.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/TaskControlThread.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/control.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/control.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/control.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/control.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/gravityCompensation.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/gravityCompensation.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/gravityCompensation.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/gravityCompensation.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/splineRunner.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/splineRunner.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Control/splineRunner.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Control/splineRunner.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Core/array.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Core/array.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Core/array.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Core/array.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Core/graph.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Core/graph.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Core/graph.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Core/graph.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Core/thread.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Core/thread.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Core/thread.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Core/thread.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Core/util.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Core/util.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Core/util.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Core/util.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/GJK/gjk.c">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/GJK/gjk.c">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/GJK/gjk.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/GJK/gjk.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/analyticShapes.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/analyticShapes.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/analyticShapes.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/analyticShapes.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/depth2PointCloud.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/depth2PointCloud.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/depth2PointCloud.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/depth2PointCloud.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/fclInterface.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/fclInterface.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/fclInterface.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/fclInterface.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/geo.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/geo.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/geo.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/geo.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/mesh.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/mesh.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/mesh.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/mesh.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/mesh_readAssimp.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/mesh_readAssimp.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/mesh_readAssimp.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/mesh_readAssimp.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/pairCollision.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/pairCollision.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/pairCollision.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/pairCollision.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/ply/ply.c">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/ply/ply.c">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/ply/ply.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/ply/ply.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/pqp_RectDist.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/pqp_RectDist.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/qhull.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/qhull.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Geo/qhull.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Geo/qhull.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Gui/graphview.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Gui/graphview.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Gui/graphview.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Gui/graphview.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Gui/gtk.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Gui/gtk.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Gui/gtk.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Gui/gtk.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Gui/opengl.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Gui/opengl.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Gui/opengl.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Gui/opengl.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Gui/viewer.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Gui/viewer.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Gui/viewer.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Gui/viewer.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/komo-ext.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/komo-ext.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/komo-ext.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/komo-ext.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/komo.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/komo.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/komo.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/komo.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/objective.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/objective.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/objective.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/objective.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/opt-benchmarks.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/opt-benchmarks.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/opt-benchmarks.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/opt-benchmarks.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/pathTools.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/pathTools.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/pathTools.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/pathTools.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/skeleton.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/skeleton.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/skeleton.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/skeleton.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/skeletonSymbol.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/skeletonSymbol.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/KOMO/skeletonSymbol.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/KOMO/skeletonSymbol.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_LeapCost.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_LeapCost.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_LeapCost.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_LeapCost.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_collisions.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_collisions.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_collisions.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_collisions.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_forces.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_forces.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_forces.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_forces.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_geometrics.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_geometrics.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_geometrics.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_geometrics.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_operators.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_operators.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_operators.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_operators.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_pose.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_pose.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_pose.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_pose.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_qFeatures.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_qFeatures.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/F_qFeatures.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/F_qFeatures.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/SWIFT/fileio.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/SWIFT/fileio.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/SWIFT/lut.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/SWIFT/lut.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/SWIFT/mesh.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/SWIFT/mesh.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/SWIFT/mesh_utils.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/SWIFT/mesh_utils.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/SWIFT/object.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/SWIFT/object.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/SWIFT/pair.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/SWIFT/pair.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/SWIFT/pqueue.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/SWIFT/pqueue.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/SWIFT/scene.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/SWIFT/scene.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/TM_default.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/TM_default.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/TM_default.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/TM_default.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/TM_qUncertainties.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/TM_qUncertainties.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/TM_qUncertainties.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/TM_qUncertainties.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/cameraview.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/cameraview.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/cameraview.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/cameraview.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/dof_particles.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/dof_particles.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/dof_particles.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/dof_particles.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/feature.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/feature.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/feature.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/feature.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/featureSymbols.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/featureSymbols.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/featureSymbols.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/featureSymbols.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/forceExchange.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/forceExchange.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/forceExchange.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/forceExchange.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/frame.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/frame.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/frame.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/frame.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kin.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kin.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kin.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kin.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kinViewer.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kinViewer.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kinViewer.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kinViewer.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kin_bullet.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kin_bullet.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kin_bullet.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kin_bullet.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kin_feather.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kin_feather.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kin_feather.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kin_feather.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kin_ode.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kin_ode.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kin_ode.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kin_ode.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kin_physx.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kin_physx.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kin_physx.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kin_physx.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kin_swift.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kin_swift.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/kin_swift.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/kin_swift.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/proxy.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/proxy.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/proxy.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/proxy.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/simulation.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/simulation.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/simulation.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/simulation.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/switch.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/switch.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/switch.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/switch.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/uncertainty.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/uncertainty.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/uncertainty.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/uncertainty.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/viewer.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/viewer.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Kin/viewer.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Kin/viewer.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Logic/fol.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Logic/fol.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Logic/fol.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Logic/fol.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Logic/folWorld.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Logic/folWorld.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Logic/folWorld.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Logic/folWorld.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Logic/relationalMachine.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Logic/relationalMachine.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Logic/relationalMachine.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Logic/relationalMachine.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Logic/treeSearchDomain.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Logic/treeSearchDomain.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Logic/treeSearchDomain.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Logic/treeSearchDomain.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/BayesOpt.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/BayesOpt.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/BayesOpt.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/BayesOpt.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/GlobalIterativeNewton.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/GlobalIterativeNewton.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/GlobalIterativeNewton.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/GlobalIterativeNewton.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/GraphOptim.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/GraphOptim.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/GraphOptim.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/GraphOptim.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/Graph_Problem.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/Graph_Problem.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/Graph_Problem.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/Graph_Problem.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/KOMO_Problem.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/KOMO_Problem.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/KOMO_Problem.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/KOMO_Problem.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/MathematicalProgram.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/MathematicalProgram.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/MathematicalProgram.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/MathematicalProgram.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/NLP_Factory.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/NLP_Factory.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/NLP_Factory.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/NLP_Factory.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/RidgeRegression.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/RidgeRegression.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/RidgeRegression.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/RidgeRegression.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/benchmarks.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/benchmarks.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/benchmarks.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/benchmarks.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/constrained.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/constrained.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/constrained.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/constrained.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/convert.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/convert.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/convert.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/convert.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/gradient.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/gradient.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/gradient.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/gradient.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/lagrangian.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/lagrangian.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/lagrangian.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/lagrangian.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/newton.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/newton.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/newton.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/newton.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/opt-ceres.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/opt-ceres.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/opt-ceres.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/opt-ceres.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/opt-ipopt.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/opt-ipopt.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/opt-ipopt.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/opt-ipopt.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/opt-nlopt.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/opt-nlopt.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/opt-nlopt.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/opt-nlopt.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/optimization.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/optimization.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/optimization.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/optimization.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/primalDual.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/primalDual.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/primalDual.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/primalDual.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/solver.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/solver.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Optim/solver.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Optim/solver.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/audio.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/audio.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/audio.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/audio.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/avutil.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/avutil.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/avutil.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/avutil.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/colorseg.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/colorseg.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/colorseg.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/colorseg.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/dataStructures.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/dataStructures.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/dataStructures.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/dataStructures.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/depth_packing.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/depth_packing.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/depth_packing.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/depth_packing.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/g4data.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/g4data.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/g4data.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/g4data.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/kinect2pointCloud.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/kinect2pointCloud.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/kinect2pointCloud.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/kinect2pointCloud.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/minEigModel.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/minEigModel.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/minEigModel.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/minEigModel.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/modelEnsemble.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/modelEnsemble.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/modelEnsemble.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/modelEnsemble.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/object.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/object.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/object.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/object.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/object_detector.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/object_detector.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/object_detector.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/object_detector.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/opencv.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/opencv.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/opencv.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/opencv.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/opencvCamera.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/opencvCamera.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/opencvCamera.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/opencvCamera.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/pcl.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/pcl.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/pcl.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/pcl.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/pclPlaneExtraction.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/pclPlaneExtraction.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/pclPlaneExtraction.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/pclPlaneExtraction.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/percept.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/percept.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/percept.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/percept.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/perceptSyncer.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/perceptSyncer.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/perceptSyncer.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/perceptSyncer.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/perceptViewer.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/perceptViewer.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/perceptViewer.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/perceptViewer.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/pointcloud_io.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/pointcloud_io.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/pointcloud_io.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/pointcloud_io.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/surfels.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/surfels.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/surfels.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/surfels.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/videoEncoder.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/videoEncoder.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/videoEncoder.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/videoEncoder.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Perception/video_opencv.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Perception/video_opencv.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Plot/gaussianProcess_plot.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Plot/gaussianProcess_plot.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Plot/plot.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/Plot/plot.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/Plot/plot.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/Plot/plot.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/lgp-py.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/lgp-py.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/lgp-py.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/lgp-py.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Bullet.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Bullet.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Bullet.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Bullet.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Camera.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Camera.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Camera.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Camera.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Config.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Config.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Config.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Config.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Control.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Control.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Control.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Control.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Feature.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Feature.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Feature.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Feature.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Frame.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Frame.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Frame.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Frame.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-KOMO.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-KOMO.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-KOMO.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-KOMO.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-LGP_Tree.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-LGP_Tree.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-LGP_Tree.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-LGP_Tree.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Operate.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Operate.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Operate.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Operate.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Optim.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Optim.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Optim.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Optim.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-PhysX.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-PhysX.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-PhysX.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-PhysX.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Simulation.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Simulation.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry-Simulation.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry-Simulation.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/ry.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/ry.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/types.cpp">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/types.cpp">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/rai/rai/ry/types.h">
+		<Unit filename="/home/jason/git/botop/rai/rai/ry/types.h">
 			<Option target="libry"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/BotOp/bot.cpp">
+		<Unit filename="/home/jason/git/botop/src/BotOp/bot.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/BotOp/bot.h">
+		<Unit filename="/home/jason/git/botop/src/BotOp/bot.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/BotOp/motionHelpers.cpp">
+		<Unit filename="/home/jason/git/botop/src/BotOp/motionHelpers.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/BotOp/motionHelpers.h">
+		<Unit filename="/home/jason/git/botop/src/BotOp/motionHelpers.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/BotOp/pyBot.cxx">
+		<Unit filename="/home/jason/git/botop/src/BotOp/pyBot.cxx">
 			<Option target="libpybot"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/BotOp/pyBot.h">
+		<Unit filename="/home/jason/git/botop/src/BotOp/pyBot.h">
 			<Option target="libpybot"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/Franka/controlEmulator.cpp">
+		<Unit filename="/home/jason/git/botop/src/Franka/controlEmulator.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/Franka/controlEmulator.h">
+		<Unit filename="/home/jason/git/botop/src/Franka/controlEmulator.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/Franka/franka.cpp">
+		<Unit filename="/home/jason/git/botop/src/Franka/franka.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/Franka/franka.h">
+		<Unit filename="/home/jason/git/botop/src/Franka/franka.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/Franka/gripper.cpp">
+		<Unit filename="/home/jason/git/botop/src/Franka/gripper.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/Franka/gripper.h">
+		<Unit filename="/home/jason/git/botop/src/Franka/gripper.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/RealSense/RealSenseThread.cpp">
+		<Unit filename="/home/jason/git/botop/src/RealSense/RealSenseThread.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/RealSense/RealSenseThread.h">
+		<Unit filename="/home/jason/git/botop/src/RealSense/RealSenseThread.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/Robotiq/RobotiqGripper.cpp">
+		<Unit filename="/home/jason/git/botop/src/Robotiq/RobotiqGripper.cpp">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/src/Robotiq/RobotiqGripper.h">
+		<Unit filename="/home/jason/git/botop/src/Robotiq/RobotiqGripper.h">
 			<Option target="rai"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/CMakeLists.txt">
+		<Unit filename="/home/jason/git/botop/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../.local/lib/python3.8/site-packages/pybind11/share/cmake/pybind11/FindPythonLibsNew.cmake">
-			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\cmake\pybind11\"/>
+		<Unit filename="/home/jason/git/botop/../../.local/lib/python3.6/site-packages/pybind11/share/cmake/pybind11/FindPythonLibsNew.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../.local/lib/python3.8/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake">
-			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\cmake\pybind11\"/>
+		<Unit filename="/home/jason/git/botop/../../.local/lib/python3.6/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../.local/lib/python3.8/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake">
-			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\cmake\pybind11\"/>
+		<Unit filename="/home/jason/git/botop/../../.local/lib/python3.6/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../.local/lib/python3.8/site-packages/pybind11/share/cmake/pybind11/pybind11ConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\cmake\pybind11\"/>
+		<Unit filename="/home/jason/git/botop/../../.local/lib/python3.6/site-packages/pybind11/share/cmake/pybind11/pybind11ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../.local/lib/python3.8/site-packages/pybind11/share/cmake/pybind11/pybind11Targets.cmake">
-			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\cmake\pybind11\"/>
+		<Unit filename="/home/jason/git/botop/../../.local/lib/python3.6/site-packages/pybind11/share/cmake/pybind11/pybind11Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\"/>
 		</Unit>
-		<Unit filename="/home/jasonharris/git/botop/../../.local/lib/python3.8/site-packages/pybind11/share/cmake/pybind11/pybind11Tools.cmake">
-			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.8\site-packages\pybind11\share\cmake\pybind11\"/>
+		<Unit filename="/home/jason/git/botop/../../.local/lib/python3.6/site-packages/pybind11/share/cmake/pybind11/pybind11Tools.cmake">
+			<Option virtualFolder="CMake Files\..\..\.local\lib\python3.6\site-packages\pybind11\share\cmake\pybind11\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

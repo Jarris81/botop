@@ -17,15 +17,15 @@ BotOp::BotOp(rai::Configuration& C, bool useRealRobot, rai::String useArm, const
   qHome = C.getJointState();
   state.set()->initZero(qHome.N);
   if(useRealRobot){
-      if(useArm=="LEFT") {
+      if(useArm=="left") {
           robotL = make_unique<FrankaThreadNew>(0, franka_getJointIndices(C, 'l'), cmd, state);
           if (gripperType == "FRANKA") gripperL = make_unique<FrankaGripper>(0);
           else if (gripperType == "ROBOTIQ") gripperL = make_unique<RobotiqGripper>(0);
-      }else if(useArm=="RIGHT") {
+      }else if(useArm=="right") {
           robotR = make_unique<FrankaThreadNew>(1, franka_getJointIndices(C, 'r'), cmd, state);
           if (gripperType == "FRANKA") gripperR = make_unique<FrankaGripper>(1);
           else if (gripperType == "ROBOTIQ") gripperR = make_unique<RobotiqGripper>(1);
-      }else if(useArm=="BOTH") {
+      }else if(useArm=="both") {
           robotL = make_unique<FrankaThreadNew>(0, franka_getJointIndices(C, 'l'), cmd, state);
           robotR = make_unique<FrankaThreadNew>(1, franka_getJointIndices(C, 'r'), cmd, state);
           if (gripperType == "FRANKA") {
@@ -49,8 +49,20 @@ BotOp::BotOp(rai::Configuration& C, bool useRealRobot, rai::String useArm, const
 //
 //    }
   }else{
-    robotL = make_unique<ControlEmulator>(C, cmd, state); //, StringA(), .001, 10.);
-    if(gripperType=="ROBOTIQ") gripperL = make_unique<GripperEmulator>();
+    if(useArm=="left") {
+      robotL = make_unique<ControlEmulator>(C, cmd, state); //, StringA(), .001, 10.);
+      if(gripperType!="none") gripperL = make_unique<GripperEmulator>();
+    } else if(useArm=="right") {
+      robotR = make_unique<ControlEmulator>(C, cmd, state); //, StringA(), .001, 10.);
+      if(gripperType!="none") gripperR = make_unique<GripperEmulator>();
+    } else if(useArm=="both"){
+      robotL = make_unique<ControlEmulator>(C, cmd, state); //, StringA(), .001, 10.);
+      if(gripperType!="none"){
+        gripperL = make_unique<GripperEmulator>();
+        gripperR = make_unique<GripperEmulator>();
+      }
+    }
+
   }
   C.setJointState(get_q());
   C.watch(false, STRING("time: 0"));
@@ -155,22 +167,20 @@ double BotOp::moveLeap(const arr& q_target, double timeCost){
   return T;
 }
 
-void BotOp::gripperOpen(rai::String whichRobot, double width, double speed) {
-    if (whichRobot == "RIGHT") {
-        gripperR->open(width, speed);
-    }
+void BotOp::gripperOpen(int whichRobot, double width, double speed) const {
+    if (whichRobot == 0) gripperL->open(width, speed);
+    else if (whichRobot == 1)  gripperR->open(width, speed);
 }
 
-void BotOp::gripperClose(rai::String whichRobot, double force, double width, double speed){
-    if (whichRobot == "RIGHT") {
-        gripperR->close(force, width, speed);
-    }
+void BotOp::gripperClose(int whichRobot, double force, double width, double speed) const{
+    if (whichRobot == 0) gripperL->close(force, width, speed);
+    else if (whichRobot == 1) gripperR->close(force, width, speed);
+
 }
 
-bool BotOp::gripperDone(rai::String whichRobot){
-    if (whichRobot == "RIGHT") {
-        return gripperR->isDone();
-    }
+bool BotOp::gripperDone(int whichRobot) const{
+    if (whichRobot == 0) return gripperL->isDone();
+    else if (whichRobot == 1) return gripperR->isDone();
     return false;
 }
 
